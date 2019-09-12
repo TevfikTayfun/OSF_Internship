@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+.general-container{
+    width: 1280px;
+    margin: 0px auto;
+    background-color: #f1edea;;
+}
+
+.body-container{
+    margin-top:265px;
+}
+
+.error-code{
+    position:absolute;
+    top:172px;
+    left:596px;
+    font-family:"lato";
+    font-size:48px;
+    font-weight:400;
+}
+
+.text-block {
+    position: absolute;
+    bottom:20px;
+    color: #000000;
+    font-family: "Lato - Extra Bold";
+    font-size: 24px;
+    font-weight: 400;
+    top:71px;
+    left:555px;
+  }
+
+  
+   
