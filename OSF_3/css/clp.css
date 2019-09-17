@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.services-container {
+  width: 1280px;
+  margin: 0 auto !important;
+  float: none !important;
+  background-color: #f2edea;
+}
+
+.services-text {
+  color: #45413e;
+  font-family: "Lato - Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.services-background {
+  margin: 0 auto;
+}
+
+.services-button {
+  width: 197px;
+  height: 32px;
+  border: 2px solid #45413e;
+  border-radius: 25px;
+  opacity: 0.5;
+}
+
+.active {
+  color: #45413e;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.breadcrumb-item {
+  color: #45413e;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.breadcrumb-return {
+  color: #85c441 !important;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.service-card-container {
+  width: 91%;
+  margin: 0 auto;
+}
+
+.card-stats {
+  width: 271px !important;
+  height: 366px !important;
+  background-color: #ffffff;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  text-align: center;
+  color: #2c3e50;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.load-clp {
+  width: 154px;
+  height: 36px;
+  border: 2px solid #d9d9d9;
+  background-color: #84bc22;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 120px;
+  margin-bottom: 77px;
+}
+
+.price-tag {
+  text-align: center;
+  color: #011847;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=clp.css.map */
