@@ -1,0 +1,47 @@
+{
+    "firstCall": [
+        {
+            "img": "./img/Layer_153.png",
+            "card-text": "lorem ipsum",
+            "price": "21$"
+        },
+        {
+            "img": "./img/Layer_154.png",
+            "card-text": "Cocktail Table Walnut",
+            "price": "21$"
+        },
+        {
+            "img": "./img/Layer_155.png",
+            "card-text": "Hay - About A Lounge <br> Chair AAL 93",
+            "price": "21$"},
+        {
+            "img": "./img/Layer_155.png",
+            "card-text": "Cocktail Table Walnut",
+            "price": "21$"
+        }
+    ],
+    "secondCall": [
+        {
+            "img": "./img/Layer_158.png",
+            "card-text": "Kristina Dam Oak Table With White Marble Top",
+            "price": "21$"
+        },
+        {
+            "img": "./img/Layer_155.png",
+            "card-text": "Kristina Dam Oak Table With White Marble Top",
+            "price": "21$"
+        },
+        {
+            "img": "./img/Layer_161.png",
+            "card-text": "Kristina Dam Oak Table With White Marble Top",
+            "price": "21$"},
+        {
+            "img": "./img/Layer_155.png",
+            "card-text": "Cocktail Table Walnut",
+            "price": "21$"
+        }
+    ],
+    "thirdCall": [
+        "fail"
+    ]
+}

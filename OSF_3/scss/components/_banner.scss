@@ -1,0 +1,35 @@
+// OSF-banner
+.osf-banner{
+    height:445px;
+    position:relative;
+}
+
+.osf-banner-head{ // fix this
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 401px;
+    height: 38px;
+    color: #ffffff;
+    font-family: "Lato - Extra Bold";
+    font-size: 48px;
+    font-weight: 400;
+
+}
+
+.osf-banner-text{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 400;
+    width: 334px;
+    height: 28px;
+    font-size: 14px;
+    text-align:center;
+}
+
+//OSF banner over

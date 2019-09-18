@@ -18,6 +18,29 @@ body {
     width: 10%;
 }
 
+.p-75{
+    padding-left: 75px;
+}
+
+.fixed-left {
+    position: fixed;
+    float: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 
 //Global Css over
 
@@ -47,19 +70,6 @@ font-size: 18px;
 font-weight: 400;
 }
 
-
-.fixed-left {
-    position: fixed;
-    float: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center
-}
 
 .nav-item {
     font-size: 14px;
@@ -404,7 +414,7 @@ a#navbarDropdown {
     padding-bottom:35px;
 }
 
-.buy-now{
+.buy-now-black{
     width: 68px;
     height: 11px;
     color: #000000;
@@ -453,11 +463,8 @@ a#navbarDropdown {
 }
 
 //  osf cards and featured products over
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
+
 
 @media only screen and (mix-width: 767px) {
 
@@ -587,10 +594,6 @@ a#navbarDropdown {
     margin-top: 40px;
     font-size: 13px;
     font-family: "Lato";   
-}
-
-.p-75{
-    padding-left: 75px;
 }
 
 

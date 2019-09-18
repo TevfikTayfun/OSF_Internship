@@ -1,0 +1,148 @@
+//caraousel and summer-sale
+.main-sliders{
+    width:92%;
+    height:505px;
+    margin: 0 auto;
+    margin-bottom:27px;
+}
+
+.main-slider-image-master {  
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+  
+.carousel-left-span{
+    position:absolute;
+    width:100%;
+    text-align:left;
+    left:67px;
+    top:75px;
+}
+
+.carousel-right-span{
+    position:absolute;
+    width:100%;
+    text-align:right;
+    top:75px;
+    right:67px;
+}
+
+.carousel-center-span{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top:75px;
+}
+
+.carousel-indicators>li {
+    height: 8px;
+    width: 8px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+}
+
+
+.carousel-indicators>li.active {
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.slide-text {
+    z-index: 2;
+    color: #fff;
+    font-size: 48px;
+    margin-bottom:110px;
+    font-family:"MyriadPro-Bold";
+}
+  
+.slide-text2 {
+    z-index: 2;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Lato";
+    margin-bottom:32px;
+}
+  
+.slide-button {
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 400;
+    width: 147px;
+    height: 36px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background: none;
+    color: white;
+    opacity: 0.7;
+    text-transform:uppercase;
+}
+
+.summer-banner{
+    position:relative;
+}
+
+.summer-text{
+    position:absolute;
+    top:40px;
+    left:40px;
+    color:white;
+    font-size:100px;
+    font-family:"Lato";
+    font-weight: 400;
+}
+
+.summer-text2{
+    position:absolute;
+    font-family:"Lato";
+    font-size:24px;
+    color:white;
+    top:210px;
+    left:85px;
+    text-align:center;
+    font-weight: 400;
+}
+
+.facebook-text{
+    text-align:center;
+    font-size:18px;
+    margin-top:40px;
+    font-weight: 400;
+}
+
+.facebook-text2{
+    text-align:center;
+    font-size:13px;
+    margin-top:5px;
+    font-weight: 400;
+}
+
+.sale-button{
+    margin-left:50px;
+    margin-top:22px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 144px;
+    height: 40px;
+    border: 2px solid #3a5b96;
+    border-radius: 20px;
+    background: none;
+    color: #3a5b96;
+    text-transform:uppercase;
+    text-align: center; 
+}
+
+.sale-button:hover{
+    background-color: #3a5b96;
+}
+
+
+.sale-button:hover span{
+    color: #fff;
+}
+
+.sale-button:hover img{
+    
+}
+//caraousel and summer over

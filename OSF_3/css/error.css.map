@@ -1,9 +1,7 @@
 {
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC;CACX",
-    "sources": [
-        "error.scss"
-    ],
-    "names": [],
-    "file": "error.css"
+"version": 3,
+"mappings": "",
+"sources": [],
+"names": [],
+"file": "error.css"
 }
