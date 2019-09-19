@@ -137,12 +137,33 @@
     background-color: #3a5b96;
 }
 
+.follow-normal>div:last-child {
+    display: none;
+}
 
 .sale-button:hover span{
     color: #fff;
-}
-
-.sale-button:hover img{
     
 }
+
+.follow-normal:hover>div:first-child {
+    display: none;
+}
+
+.follow-normal:hover>div:last-child {
+    display: block;
+    background-color: #3a5b96;
+}
+
+button.sale-button.follow-normal>div>img {
+    margin-right: 2px;
+}
+
+button.sale-button.follow-normal>div>span {
+    margin-left: 2px;
+}
+
+
+
+
 //caraousel and summer over

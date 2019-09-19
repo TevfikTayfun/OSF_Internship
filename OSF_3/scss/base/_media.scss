@@ -1,0 +1,21 @@
+@media (min-width: 320px) {
+    .navbar-nav.row.w-100 {
+        height: fit-content;
+    }
+    .navbar-nav.row.w-100 div.nav-item {
+        height: fit-content;
+    }
+    .navbar-nav>div.col-4 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-nav-copy {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+}

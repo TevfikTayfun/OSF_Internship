@@ -38,9 +38,12 @@ body {
   margin-top: 80px; }
 
 .modal-content {
-  width: 500px;
-  height: 467px;
-  background-color: #ffffff; }
+  position: absolute;
+  background-color: #ffffff;
+  margin-top: 45%; }
+
+.green-text {
+  color: #24c36c !important; }
 
 @media only screen and (mix-width: 767px) {
   .left-0-mobile {
@@ -197,15 +200,19 @@ a#navbarDropdown {
 
 .heart-normal > div:first-child > sup {
   color: #84bc22;
-  border: 1px solid #f00;
+  border: 1px solid #84bc22;
   border-radius: 50%;
-  padding: 1px 4px; }
+  padding: 1px 3px; }
 
 .heart-normal > div:last-child > sup {
   color: #84bc22;
-  border: 1px solid #f00;
+  border: 1px solid #84bc22;
   border-radius: 50%;
-  padding: 1px 4px; }
+  padding: 1px 3px; }
+
+sup {
+  top: -0.8em;
+  right: 1.2em; }
 
 .bag-normal > div:last-child {
   display: none; }
@@ -222,13 +229,13 @@ a#navbarDropdown {
 
 .bag-normal > div:first-child > sup {
   color: #84bc22;
-  border: 1px solid #f00;
+  border: 1px solid #84bc22;
   border-radius: 50%;
   padding: 1px 4px; }
 
 .bag-normal > div:last-child > sup {
   color: #84bc22;
-  border: 1px solid #f00;
+  border: 1px solid #84bc22;
   border-radius: 50%;
   padding: 1px 4px; }
 
@@ -352,12 +359,28 @@ a#navbarDropdown {
 .sale-button:hover {
   background-color: #3a5b96; }
 
+.follow-normal > div:last-child {
+  display: none; }
+
 .sale-button:hover span {
   color: #fff; }
 
+.follow-normal:hover > div:first-child {
+  display: none; }
+
+.follow-normal:hover > div:last-child {
+  display: block;
+  background-color: #3a5b96; }
+
+button.sale-button.follow-normal > div > img {
+  margin-right: 2px; }
+
+button.sale-button.follow-normal > div > span {
+  margin-left: 2px; }
+
 .osf-cards {
   width: 1280px;
-  height: 1061px;
+  min-height: 1061px;
   background-color: #262a32; }
 
 .osf-card-content {
@@ -447,13 +470,9 @@ a#navbarDropdown {
   background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
   opacity: 0.8; }
 
-.scroller {
-  text-align: center;
-  padding-bottom: 35px; }
-
 .featured-products {
   width: 1280px;
-  height: 555px;
+  min-height: 555px;
   background-color: #262a32; }
 
 .featured-head {
@@ -570,6 +589,12 @@ a#navbarDropdown {
   height: 28px;
   margin-top: 34px; }
 
+.arrow-right {
+  text-align: left; }
+
+.arrow-left {
+  text-align: right; }
+
 .information-container {
   height: 198px;
   background-color: #45413e;
@@ -583,6 +608,9 @@ a#navbarDropdown {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px; }
+
+.spec-ml {
+  margin-left: 50px; }
 
 .services-header {
   width: 57px;
@@ -598,8 +626,8 @@ a#navbarDropdown {
   color: white; }
 
 .osf-banner {
-  height: 445px;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .osf-banner-head {
   position: absolute;
@@ -681,5 +709,18 @@ a#navbarDropdown {
 
 .footer-manager:first-child {
   margin-left: 55px; }
+
+@media (min-width: 320px) {
+  .navbar-nav.row.w-100 {
+    height: fit-content; }
+
+  .navbar-nav.row.w-100 div.nav-item {
+    height: fit-content; }
+
+  .navbar-nav > div.col-4 {
+    display: none; } }
+@media (max-width: 767px) {
+  .navbar-nav-copy {
+    display: block; } }
 
 /*# sourceMappingURL=index.css.map */

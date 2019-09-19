@@ -48,9 +48,13 @@ body {
 }
 
 .modal-content{
-    width: 500px;
-    height: 467px;
+    position:absolute;
     background-color: #ffffff;
+    margin-top:45%;
+}
+
+.green-text{
+    color: #24c36c !important;
 }
 
 @media only screen and (mix-width: 767px) {

@@ -1,7 +1,7 @@
 // OSF_Popular items and featured products
 .osf-cards{
     width: 1280px;
-    height: 1061px;
+    min-height: 1061px;
     background-color: #262a32;
 }
 
@@ -16,6 +16,7 @@
     height: 0px;
     margin-bottom: 0px;
   }
+  
 
 .popular-head{
     width: 145px;
@@ -50,7 +51,6 @@
     justify-content: center;
     margin: 0 auto;
     margin-top:22px;
-    
 }
 
 .load-more:hover{
@@ -106,15 +106,11 @@
     opacity: 0.8;
 }
 
-.scroller{
-    text-align:center;
-    padding-bottom:35px;
-}
 
 
 .featured-products{
     width: 1280px;
-    height: 555px;
+    min-height: 555px;
     background-color: #262a32;
 }
 
@@ -179,6 +175,7 @@
     text-transform: uppercase;
     
 }
+
 
 .price-tag>div.row>div:last-child:hover {
     background-color: #84bc22;
@@ -253,6 +250,14 @@
     width: 33px;
     height: 28px;
     margin-top: 34px;
+}
+
+.arrow-right{
+    text-align:left;
+}
+
+.arrow-left{
+    text-align:right;
 }
 
 //  osf cards and featured products over

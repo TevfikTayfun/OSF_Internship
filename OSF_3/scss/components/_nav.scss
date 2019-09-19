@@ -171,19 +171,22 @@ a#navbarDropdown {
 
 .heart-normal>div:first-child>sup {
     color: #84bc22;
-    border: 1px solid #f00;
+    border: 1px solid #84bc22;
     border-radius:50%;
-    padding: 1px 4px;
+    padding: 1px 3px;
 }
 
 .heart-normal>div:last-child>sup {
     color: #84bc22;
-    border: 1px solid #f00;
+    border: 1px solid #84bc22;
     border-radius:50%;
-    padding: 1px 4px;
+    padding: 1px 3px;
 }
 
-
+sup {
+    top: -0.8em;
+    right: 1.2em;
+}
 
 .bag-normal>div:last-child {
     display: none;
@@ -204,14 +207,14 @@ a#navbarDropdown {
 
 .bag-normal>div:first-child>sup {
     color: #84bc22;
-    border: 1px solid #f00;
+    border: 1px solid #84bc22;
     border-radius:50%;
     padding: 1px 4px;
 }
 
 .bag-normal>div:last-child>sup {
     color: #84bc22;
-    border: 1px solid #f00;
+    border: 1px solid #84bc22;
     border-radius:50%;
     padding: 1px 4px;
 
