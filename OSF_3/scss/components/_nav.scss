@@ -116,6 +116,8 @@ a#navbarDropdown {
     font-weight: 400;
     line-height: 31px;
     padding-left: 65px;
+    max-width:1280px;
+    margin: 0 auto;
 }
 
 .mega-bar-info ul li a{
@@ -129,6 +131,7 @@ a#navbarDropdown {
 .mega-drop-head{
     margin-bottom:21px;
     margin-top:60px;
+    white-space: nowrap;
 }
 
 .empty-head{

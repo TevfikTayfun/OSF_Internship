@@ -8,18 +8,6 @@ var checkForBagCount = function () {
 }
 
 
-function passValidation() { 
-    var str = document.getElementById("myInput").value; 
-    if (str.match(/[a-z]/g) && str.match( 
-            /[A-Z]/g) && str.match( 
-            /[0-9]/g) && str.match( 
-            /[^a-zA-Z\d]/g) && str.length >= 6) 
-        alert("Correct password type");
-        
-    else 
-        alert("Enter the correct password type");
-} 
-
 
 var checkForWhishCount = function () {
     if (localStorage.getItem("wish") === null) {
@@ -92,6 +80,18 @@ $(document).ready(function () {
     checkForWhishCount();
 
     var dateTime = new Date();
+
+    $(".loginAccept").on("click", function () {
+        var str = document.getElementById("myInput").value; 
+    if (str.match(/[a-z]/g) && str.match( 
+            /[A-Z]/g) && str.match( 
+            /[0-9]/g) && str.match( 
+            /[^a-zA-Z\d]/g) && str.length >= 6) 
+        alert("Correct password type");
+        
+    else 
+        alert("Enter the correct password type");
+    });
 
     $(".load-more").on("click", function () {
         loadMore(loadKeys[loadCounter + 1]);
