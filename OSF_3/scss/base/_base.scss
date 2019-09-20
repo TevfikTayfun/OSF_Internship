@@ -49,8 +49,22 @@ body {
 
 .modal-content{
     position:absolute;
+    height: 467px;
     background-color: #ffffff;
-    margin-top:45%;
+    margin-top:42%;
+}
+
+.modal-title{
+    color: #45413e;
+    font-family: "Lato - Extra Bold";
+    font-size: 30px;
+    font-weight: 400; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.modal-body{
+    flex:0;
 }
 
 .green-text{

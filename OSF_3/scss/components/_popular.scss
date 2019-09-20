@@ -39,6 +39,14 @@
     
 }
 
+.carousel-control-next {
+     text-align:left;
+}
+
+.carousel-control-prev {
+    text-align:right;
+}
+
 .load-more{
     width: 270px;
     height: 45px;
@@ -252,12 +260,5 @@
     margin-top: 34px;
 }
 
-.arrow-right{
-    text-align:left;
-}
-
-.arrow-left{
-    text-align:right;
-}
 
 //  osf cards and featured products over

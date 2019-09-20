@@ -1,7 +1,7 @@
 //Services
 
 .information-container{
-    height:198px;
+    max-height:198px;
     background-color: #45413e;
     position:relative;
 }
@@ -25,7 +25,7 @@
     width: 57px;
     height: 15px;
     color: #ffffff;
-    font-family: Lato;
+    font-family: "Lato";
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;

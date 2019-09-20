@@ -39,8 +39,20 @@ body {
 
 .modal-content {
   position: absolute;
+  height: 467px;
   background-color: #ffffff;
-  margin-top: 45%; }
+  margin-top: 42%; }
+
+.modal-title {
+  color: #45413e;
+  font-family: "Lato - Extra Bold";
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+.modal-body {
+  flex: 0; }
 
 .green-text {
   color: #24c36c !important; }
@@ -82,6 +94,12 @@ body {
   color: #84bc22;
   font-size: 18px;
   font-weight: 400; }
+
+.error-m {
+  margin-bottom: 55px; }
+
+.mt-57 {
+  margin-top: 57px; }
 
 .nav-item {
   font-size: 14px;
@@ -168,12 +186,11 @@ a#navbarDropdown {
 .mega-bar-info > div > ul {
   list-style: none; }
 
-.modal-title {
-  padding-top: 58px; }
+.mt-40 {
+  margin-top: 40px; }
 
 .sign-text {
-  width: 135px;
-  height: 10px;
+  text-align: center;
   color: #84bc22;
   font-family: Lato;
   font-size: 12px;
@@ -181,6 +198,15 @@ a#navbarDropdown {
   line-height: 43px;
   /* Text style for "I donΓÇÖt ha" */
   letter-spacing: 0.6px; }
+
+.dropdown-img {
+  width: 271px;
+  height: 276px; }
+
+.pass-img {
+  position: absolute;
+  top: 78%;
+  left: 88%; }
 
 .nav-item > a {
   white-space: nowrap; }
@@ -191,6 +217,21 @@ a#navbarDropdown {
 .heart-normal > div {
   position: absolute;
   top: 17px; }
+
+.login-but {
+  margin-top: 45px;
+  margin-bottom: 12px;
+  width: 181px;
+  height: 36px;
+  border: 2px solid #84bc22;
+  border-radius: 20px;
+  background-color: #84bc22;
+  color: white; }
+
+input:-internal-autofill-selected {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: black !important; }
 
 .heart-normal:hover > div:first-child {
   display: none; }
@@ -411,6 +452,12 @@ button.sale-button.follow-normal > div > span {
   margin-right: 29px;
   margin-bottom: 29px; }
 
+.carousel-control-next {
+  text-align: left; }
+
+.carousel-control-prev {
+  text-align: right; }
+
 .load-more {
   width: 270px;
   height: 45px;
@@ -589,14 +636,8 @@ button.sale-button.follow-normal > div > span {
   height: 28px;
   margin-top: 34px; }
 
-.arrow-right {
-  text-align: left; }
-
-.arrow-left {
-  text-align: right; }
-
 .information-container {
-  height: 198px;
+  max-height: 198px;
   background-color: #45413e;
   position: relative; }
 
@@ -616,7 +657,7 @@ button.sale-button.follow-normal > div > span {
   width: 57px;
   height: 15px;
   color: #ffffff;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -658,7 +699,7 @@ button.sale-button.follow-normal > div > span {
   border: 2px solid black;
   background-color: #fff;
   color: #45413e;
-  height: 347px; }
+  max-height: 347px; }
 
 .logo-display ul {
   list-style: none; }
@@ -709,18 +750,5 @@ button.sale-button.follow-normal > div > span {
 
 .footer-manager:first-child {
   margin-left: 55px; }
-
-@media (min-width: 320px) {
-  .navbar-nav.row.w-100 {
-    height: fit-content; }
-
-  .navbar-nav.row.w-100 div.nav-item {
-    height: fit-content; }
-
-  .navbar-nav > div.col-4 {
-    display: none; } }
-@media (max-width: 767px) {
-  .navbar-nav-copy {
-    display: block; } }
 
 /*# sourceMappingURL=index.css.map */

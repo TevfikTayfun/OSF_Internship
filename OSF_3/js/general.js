@@ -7,6 +7,20 @@ var checkForBagCount = function () {
     }
 }
 
+
+function passValidation() { 
+    var str = document.getElementById("myInput").value; 
+    if (str.match(/[a-z]/g) && str.match( 
+            /[A-Z]/g) && str.match( 
+            /[0-9]/g) && str.match( 
+            /[^a-zA-Z\d]/g) && str.length >= 6) 
+        alert("Correct password type");
+        
+    else 
+        alert("Enter the correct password type");
+} 
+
+
 var checkForWhishCount = function () {
     if (localStorage.getItem("wish") === null) {
         localStorage.setItem("wish", 0);
@@ -23,7 +37,7 @@ var loadMore = function (key) {
             } else {
                 alert("Dahada eşya galmadı bacım");
             }
-            
+
         }, failure: function () {
             alert("Dahada eşya galmadı bacım");
         }
@@ -33,31 +47,31 @@ var loadMore = function (key) {
 var loadMoreSuccess = function (response, key) {
     console.log(response[key]);
     var fourCardHtml = "";
-    response[key].forEach(function(elem, index) {
-        var cardHtml =      '<div class="col-xl-3 col-sm-12">' +
-                                '<div class="card card-stats buy-card-hover">' +
-                                    '<img src="' + elem.img + '" class="card-img-top" alt="...">' +
-                                    '<div class="card-body">' +
-                                        '<p class="card-text">' + elem.cardText + '</p>' +
-                                        '<div class="price-tag">$ ' + elem.price + '</div>' +
-                                    '</div>' +
+    response[key].forEach(function (elem, index) {
+        var cardHtml = '<div class="col-xl-3 col-sm-12">' +
+            '<div class="card card-stats buy-card-hover">' +
+            '<img src="' + elem.img + '" class="card-img-top" alt="...">' +
+            '<div class="card-body">' +
+            '<p class="card-text">' + elem.cardText + '</p>' +
+            '<div class="price-tag">$ ' + elem.price + '</div>' +
+            '</div>' +
 
-                                    '<div class="buy-card-hover-gradient">' +
-                                        '<div class="row">' +
-                                            '<div class="col-5 offset-1">' +
-                                                '<div class="buy-from-card">' +
-                                                    '<img src="./img/Plus_(24x24).png" alt="">' +
-                                                '</div>' +
-                                            '</div>' +
-                                            '<div class="col-5">' +
-                                                '<div class="like-from-card">' +
-                                                    '<img src="./img/Heart_(24x24).png" alt="">' +
-                                                '</div>' +
-                                            '</div>' +
-                                        '</div>' +
-                                    '</div>' +
-                                '</div>' +
-                            '</div>';
+            '<div class="buy-card-hover-gradient">' +
+            '<div class="row">' +
+            '<div class="col-5 offset-1">' +
+            '<div class="buy-from-card">' +
+            '<img src="./img/Plus_(24x24).png" alt="">' +
+            '</div>' +
+            '</div>' +
+            '<div class="col-5">' +
+            '<div class="like-from-card">' +
+            '<img src="./img/Heart_(24x24).png" alt="">' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>';
         fourCardHtml = fourCardHtml + cardHtml;
         if (index === (response[key].length - 1)) {
             $(".to-add-cards").append(fourCardHtml);
@@ -73,13 +87,13 @@ $(document).ready(function () {
         "2": "secondCall",
         "3": "thirdCall"
     }
-    
+
     checkForBagCount();
     checkForWhishCount();
 
     var dateTime = new Date();
 
-    $(".load-more").on("click", function() {
+    $(".load-more").on("click", function () {
         loadMore(loadKeys[loadCounter + 1]);
         loadCounter = loadCounter + 1;
     });

@@ -5,28 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404</title>
-    <link rel="stylesheet" href="/css/error.scss">
+    <link rel="stylesheet" href="./scss/error.scss">
     <link rel="stylesheet" href="./font/Lato-ExtraBold.ttf">
     <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css">
+    <title>404</title>
 </head>
 
 <body>
+
     <div class="error-container">
-        <div class="row">
-            <div class="error-background">
-                
-            </div>
-            <div class="col-xl-5" style='background-image: url("./img/Body.png")'>
-                <span class="oops">
-                    OOPS
-                </span>
-            </div>
-            <div class="col-xl-7">
-                <span>XDXD</span>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+
+        <div class="error-head">404</div>
+
+        <div class="image-container">
+            <img src="./img/Body.png" alt="">
+            <div class="row">
+                <div class="col-5">
+                    OOPS!
+                </div>
+                <div class="col-7">
+                    <div class="sorry">Sorry, this page could not be found!</div>
+                    <div class="error-text">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                        et magnis dis parturient montes, nascetur ridiculus mus.
+
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa.
+
+                        </div>
+                </div>
+                <div class="go-back"><a href="./index.html"> Go back to homepage</a></div>
+                <div class="search">Search our site</div>
             </div>
         </div>
     </div>
+
 
     <script src="./bootstrap4/js/bootstrap.js"></script>
 </body>

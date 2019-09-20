@@ -22,6 +22,14 @@ font-size: 18px;
 font-weight: 400;
 }
 
+.error-m{
+    margin-bottom:55px;
+}
+
+.mt-57{
+    margin-top:57px;
+}
+
 .nav-item {
     font-size: 14px;
     font-weight: 400;
@@ -131,14 +139,13 @@ a#navbarDropdown {
     list-style: none;
 }
 
-.modal-title{
-    padding-top:58px;
+
+.mt-40{
+    margin-top:40px;
 }
 
-
 .sign-text{
-    width: 135px;
-    height: 10px;
+    text-align: center;
     color: #84bc22;
     font-family: Lato;
     font-size: 12px;
@@ -146,6 +153,17 @@ a#navbarDropdown {
     line-height: 43px;
     /* Text style for "I don’t ha" */
     letter-spacing: 0.6px;
+}
+
+.dropdown-img{
+    width: 271px;
+    height: 276px;
+}
+
+.pass-img{
+    position: absolute;
+    top: 78%;
+    left: 88%;
 }
 
 .nav-item>a {
@@ -159,6 +177,23 @@ a#navbarDropdown {
 .heart-normal>div {
     position:absolute;
     top:17px;
+}
+
+.login-but{
+    margin-top:45px;
+    margin-bottom:12px;
+    width: 181px;
+    height: 36px;
+    border: 2px solid #84bc22;
+    border-radius: 20px;
+    background-color: #84bc22;
+    color:white;
+}
+
+input:-internal-autofill-selected {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .heart-normal:hover>div:first-child {
