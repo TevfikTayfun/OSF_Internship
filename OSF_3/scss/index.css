@@ -57,23 +57,66 @@ body {
 .green-text {
   color: #24c36c !important; }
 
-@media only screen and (mix-width: 767px) {
-  .left-0-mobile {
-    left: 0; }
+.cookie-container {
+  top: 45%;
+  left: 19%;
+  position: absolute;
+  border-radius: 15px;
+  display: none;
+  z-index: 5;
+  width: 1170px;
+  height: 148px;
+  background-color: #ffffff;
+  margin: 0 auto; }
 
-  .fixed-center-mobile {
-    position: fixed;
-    width: 100%;
-    text-align: center; }
+.cookie-header {
+  padding-top: 28px;
+  width: 184px;
+  height: 13px;
+  color: #84bc22;
+  font-family: "Lato - Extra Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px; }
 
-  .hide-on-mobile {
-    display: none; }
+.cookie-page {
+  color: #84bc22; }
 
-  .no-pl-on-mobile {
-    padding-left: 0 !important; }
+.cookie-page:hover {
+  color: #84bc22; }
 
-  .mobile-nav-height {
-    height: 90px; } }
+.cookie-text {
+  white-space: nowrap;
+  width: 828px;
+  height: 60px;
+  color: #45413e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+.cookie-accept {
+  border: 2px solid #e8e2d6;
+  width: 148px;
+  height: 37px;
+  background-color: #84bc22;
+  border-radius: 30px;
+  color: white;
+  justify-content: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  left: 84%;
+  top: -29px; }
+
+.cookie-close {
+  position: relative;
+  left: 84%;
+  top: -96px; }
+
 .logo1 {
   width: 63px;
   height: 65px; }
@@ -208,7 +251,7 @@ a#navbarDropdown {
 
 .pass-img {
   position: absolute;
-  top: 78%;
+  top: 42%;
   left: 88%; }
 
 .nav-item > a {
@@ -352,6 +395,12 @@ sup {
   opacity: 0.7;
   text-transform: uppercase; }
 
+.slide-button > a {
+  color: white;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none; }
+
 .summer-banner {
   position: relative; }
 
@@ -432,11 +481,14 @@ button.sale-button.follow-normal > div > span {
   margin: 0 auto;
   margin-bottom: 20px; }
 
-.popular-head.col-5 {
+.popular-head.col-xl-5 {
   border-bottom: 1px solid #fff;
   padding-top: 106px;
   height: 0px;
   margin-bottom: 0px; }
+
+.popular-head.col-sm-2 {
+  white-space: nowrap; }
 
 .popular-head {
   width: 145px;
@@ -568,14 +620,16 @@ button.sale-button.follow-normal > div > span {
 .price-tag > div.row > div {
   padding-top: 8px; }
 
-.buy-now-popular {
+.buy-now-popular > a {
   width: 68px;
   height: 11px;
   color: #000000;
   font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none; }
 
 .price-tag > div.row > div:last-child:hover {
   background-color: #84bc22;
@@ -700,7 +754,6 @@ button.sale-button.follow-normal > div > span {
   text-align: center; }
 
 .general-footer {
-  border: 2px solid black;
   background-color: #fff;
   color: #45413e;
   max-height: 347px; }
@@ -763,9 +816,18 @@ button.sale-button.follow-normal > div > span {
     height: fit-content; }
 
   .navbar-nav > div.col-4 {
+    display: none; }
+
+  .no-media {
     display: none; } }
 @media (max-width: 767px) {
   .navbar-nav-copy {
-    display: block; } }
+    display: block; }
+
+  .no-media {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .no-media {
+    display: none; } }
 
 /*# sourceMappingURL=index.css.map */

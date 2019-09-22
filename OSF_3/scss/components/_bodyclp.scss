@@ -5,8 +5,7 @@
 
 .services-container{
     width: 1280px;
-	margin: 0 auto !important; 
-    float: none !important; 
+	margin: 0 auto; 
     background-color: #f2edea;
 }
 
@@ -16,18 +15,45 @@
     font-size: 48px;
     font-weight: 400;
     text-align:center;
+    padding-bottom:49px;
+}
+
+.results{
+    width: 156px;
+    height: 15px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding-bottom:52px;
 }
 
 .services-background{
     margin:0 auto;
+    background-color:#fff;
+    width: 1169px;
+    height: 165px;
+    background-color: #ffffff;
+    margin-bottom:31px;
 }
 
 .services-button{
     width: 197px;
     height: 32px;
     border: 2px solid #45413e;
+    background-color:white;
+    color: black;
     border-radius: 25px;
     opacity: 0.5;
+}
+
+.services-button span{
+    color:black;
+}
+
+.special-down{
+    text-align:right;
 }
 
 .active{
@@ -37,11 +63,47 @@
     font-weight: 400;
 }
 
+a {
+    color: #84bc22;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+a:hover{
+    color: #84bc22;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+    list-style: none;
+    background-color: #f1edea; 
+    border-radius: 0.25rem;
+    justify-content: center;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    padding-top: 133px;
+}
+
 .breadcrumb-item{
     color: #45413e;
     font-family: Lato;
     font-size: 13px;
     font-weight: 400;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #bdc3c7;
+    content: "/";
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .breadcrumb-return{
@@ -82,8 +144,18 @@
     border-radius: 20px;
     color:white;
     margin: 0 auto;
-    margin-top:120px;
-    margin-bottom:77px;
+    margin-top: 88px;
+    margin-bottom:75px;
+}
+
+.load-style{
+    width: 71px;
+    height: 10px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .price-tag{
@@ -92,4 +164,8 @@
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
+}
+
+.item-padding{
+    margin-right:32px;
 }

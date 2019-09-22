@@ -23,11 +23,11 @@ var loadMore = function (key) {
             if (response[key] !== "fail" && response[key] !== undefined) {
                 loadMoreSuccess(response, key);
             } else {
-                alert("Dahada eşya galmadı bacım");
+                alert("Cannot load more.");
             }
 
         }, failure: function () {
-            alert("Dahada eşya galmadı bacım");
+            alert("Cannot load more.");
         }
     });
 }
@@ -100,10 +100,17 @@ $(document).ready(function () {
 
     $(".footer-year").html(dateTime.getFullYear());
 
+    /*
     setTimeout(function () {
-        alert("tefooooooooooooooooooooooooo");
+        $("#showcookie").show();
+        $('body').css('background-color', 'rgba(128, 128, 128, 1)');
     }, 10000);
 
+    $(".cookie-close").on("click", function(){
+        $(this).find(".cookie-container").css("display", "none");
+    });
+    */
+   
     $(".showPassword").on("click", function () {
         if ($("#myInput").attr("type") === "password") {
             $("#myInput").attr("type", "text");

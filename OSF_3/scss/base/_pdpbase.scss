@@ -1,0 +1,131 @@
+.pdp-container{
+    width: 1280px;
+	margin: 0 auto; 
+    background-color: #f2edea;
+}
+
+.osf-cards{
+    width: 1280px;
+    min-height:480px !important;
+    background-color:#f2edea !important;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+    list-style: none;
+    background-color: #f1edea; 
+    border-radius: 0.25rem;
+    justify-content: center;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.ellipse-right{
+    margin-right:5px;
+}
+
+.counter{
+    width: 106px;
+    height: 36px;
+    border: 2px solid #e8e2d6;
+    background: none;
+}
+
+.gray-right{
+    margin-right:22px;
+}
+
+.pdp-price{
+    width: 176px;
+    height: 45px;
+    color: #45413e;
+    font-family: "Lato - Extra Bold";
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom:42px;
+    margin-top:46px;
+}
+
+.pop-item{
+    color: #45413e !important;
+    text-transform: uppercase;
+}
+
+.dark-gray>button{
+    width: 152px;
+    height: 36px;
+    border: 2px solid #e8e2d6;
+    background: transparent;
+    border-radius:18px;
+    margin-bottom:33px;
+}
+
+.add-to-cart{
+    width: 153px;
+    height: 36px;
+    border: 2px solid #e8e2d6;
+    background-color: #85c441;
+    border-radius: 30px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top:22px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #bdc3c7;
+    content: "/";
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.breadcrumb-return{
+    color: #85c441 !important;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+a {
+    color: #85c441;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover{
+    color: #85c441;
+}
+
+
+.pdp-title{
+    height: 46px;
+    color: #45413e;
+    font-family: "Lato - Extra Bold";
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+.main-body{
+    margin: 0 auto;
+    width: 1170px;
+    height: 957px;
+    background-color:#fff;
+}
+
+.model-image-main{
+    width: 578px;
+    height: 526px;  
+    margin-top:14px;
+    margin-left:16px;
+}

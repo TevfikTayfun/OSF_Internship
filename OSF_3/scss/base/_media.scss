@@ -8,14 +8,25 @@
     .navbar-nav>div.col-4 {
         display: none;
     }
+
+    .no-media{
+        display:none;
+    }
 }
 
 @media (max-width: 767px) {
     .navbar-nav-copy {
         display: block;
     }
+
+    .no-media{
+        display:none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-
+    .no-media{
+        display:none;
+    }
+    
 }
