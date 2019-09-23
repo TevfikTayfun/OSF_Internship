@@ -43,6 +43,13 @@
     border-radius: 8px;
 }
 
+.carousel-control-prev{
+    z-index:0;
+}
+
+.carousel-control-next{
+    z-index:0;
+}
 
 .carousel-indicators>li.active {
     background-color: transparent;

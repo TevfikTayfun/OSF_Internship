@@ -1,4 +1,8 @@
 @media (min-width: 320px) and (max-width:767px) {
+
+    .osf-banner>img{
+        width: 320px;
+    }
     .navbar-nav.row.w-100 {
         height: fit-content;
     }
@@ -11,6 +15,46 @@
 
     .no-media{
         display:none;
+    }
+
+    .center-logo{
+        margin: 0 auto;
+        padding-left:0;
+        margin-left:0;
+    }
+
+    div#navbarSupportedContent {
+        background-color: #262a32;
+    }
+
+    .cookie-text{
+        width:320px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        text-align: left;
+    }
+
+    .disable-on-phone{
+        display:none;
+    }
+
+    .show-on-mobile{
+        display:block;
+    }
+
+
+    .mb-34px{
+        margin-bottom: 34px;
+    }
+
+    .fixed-center-mobile{
+        width: 100%;
+        text-align: center;
+    }
+    .osf-cards{
+        width:100%;
     }
 }
 

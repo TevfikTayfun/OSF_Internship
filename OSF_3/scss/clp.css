@@ -20,6 +20,24 @@ body {
   position: fixed;
   float: left; }
 
+.right {
+  float: right !important; }
+
+.left {
+  margin-left: -29px; }
+
+.left-price {
+  margin-left: -85px; }
+
+.left-small {
+  margin-left: -69px; }
+
+.mr-10px {
+  margin-right: 10px !important; }
+
+.mt-10px {
+  margin-top: 10px !important; }
+
 .text-right {
   text-align: right; }
 
@@ -58,6 +76,11 @@ body {
   color: #24c36c !important; }
 
 .cookie-container {
+  top: 45%;
+  position: absolute;
+  border-radius: 15px;
+  display: none;
+  z-index: 5;
   width: 1170px;
   height: 148px;
   background-color: #ffffff;
@@ -107,29 +130,17 @@ body {
   top: -29px; }
 
 .cookie-close {
-  width: 20px;
-  height: 20px;
   position: relative;
   left: 84%;
   top: -96px; }
 
-@media only screen and (mix-width: 767px) {
-  .left-0-mobile {
-    left: 0; }
+.fadefade {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 5; }
 
-  .fixed-center-mobile {
-    position: fixed;
-    width: 100%;
-    text-align: center; }
-
-  .hide-on-mobile {
-    display: none; }
-
-  .no-pl-on-mobile {
-    padding-left: 0 !important; }
-
-  .mobile-nav-height {
-    height: 90px; } }
 * {
   padding: 0;
   margin: 0; }
@@ -159,6 +170,7 @@ body {
 
 .services-background {
   margin: 0 auto;
+  border-radius: 10px;
   background-color: #fff;
   width: 1169px;
   height: 165px;
@@ -207,13 +219,21 @@ a:hover {
   font-family: Lato;
   font-size: 13px;
   font-weight: 400;
-  padding-top: 133px; }
+  padding-top: 33px; }
 
 .breadcrumb-item {
   color: #45413e;
   font-family: Lato;
   font-size: 13px;
   font-weight: 400; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #bdc3c7;
+  content: "/";
+  margin-left: 10px;
+  margin-right: 10px; }
 
 .breadcrumb-return {
   color: #85c441 !important;
@@ -269,6 +289,12 @@ a:hover {
 
 .item-padding {
   margin-right: 32px; }
+
+.mt-35 {
+  margin-top: 35px; }
+
+.mt-31 {
+  margin-top: 31px; }
 
 .logo1 {
   width: 63px;
@@ -404,7 +430,7 @@ a#navbarDropdown {
 
 .pass-img {
   position: absolute;
-  top: 78%;
+  top: 42%;
   left: 88%; }
 
 .nav-item > a {
@@ -534,6 +560,27 @@ sup {
 .footer-manager:first-child {
   margin-left: 55px; }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar-nav.row.w-100 {
+    height: fit-content; }
+
+  .navbar-nav.row.w-100 div.nav-item {
+    height: fit-content; }
+
+  .navbar-nav > div.col-4 {
+    display: none; }
+
+  .no-media {
+    display: none; } }
+@media (max-width: 767px) {
+  .navbar-nav-copy {
+    display: block; }
+
+  .no-media {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .no-media {
+    display: none; } }
 .osf-cards {
   width: 1280px;
   min-height: 1061px;
@@ -544,11 +591,14 @@ sup {
   margin: 0 auto;
   margin-bottom: 20px; }
 
-.popular-head.col-5 {
+.popular-head.col-xl-5 {
   border-bottom: 1px solid #fff;
   padding-top: 106px;
   height: 0px;
   margin-bottom: 0px; }
+
+.popular-head.col-sm-2 {
+  white-space: nowrap; }
 
 .popular-head {
   width: 145px;
@@ -568,11 +618,36 @@ sup {
   margin-right: 29px;
   margin-bottom: 29px; }
 
+.middle-one {
+  margin-left: 26px; }
+
+.left-one {
+  margin-right: 134px; }
+
+.special-line-first {
+  width: 228px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  right: 55%; }
+
+.special-line-second {
+  height: 3px;
+  width: 228px;
+  position: absolute;
+  top: 50%;
+  left: 65%; }
+
+.right-one {
+  margin-left: 174px; }
+
 .carousel-control-next {
-  text-align: left; }
+  text-align: left;
+  z-index: 0; }
 
 .carousel-control-prev {
-  text-align: right; }
+  text-align: right;
+  z-index: 0; }
 
 .load-more {
   width: 270px;
@@ -680,14 +755,16 @@ sup {
 .price-tag > div.row > div {
   padding-top: 8px; }
 
-.buy-now-popular {
+.buy-now-popular > a {
   width: 68px;
   height: 11px;
   color: #000000;
   font-family: "Lato";
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none; }
 
 .price-tag > div.row > div:last-child:hover {
   background-color: #84bc22;

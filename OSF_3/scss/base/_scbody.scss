@@ -1,0 +1,70 @@
+.shopping-container{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #f1edea;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+    list-style: none;
+    background-color: #f1edea; 
+    border-radius: 0.25rem;
+    justify-content: center;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #bdc3c7;
+    content: "/";
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.breadcrumb-item.active {
+    color: black;
+}
+
+
+a {
+    color: #84bc22;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.empty-space-shop{
+    width: 434px;
+    height: 70px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom:33px;
+}
+
+.shopping-head{
+    width: 380px;
+    height: 37px;
+    color: #45413e;
+    font-family: "Lato - Extra Bold";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.shop-body{
+    width: 1170px;
+    height: 943px;
+    margin:0 auto;
+    background-color:white;
+    margin-bottom:37px;
+}
+
+.shop-pt{
+    padding-top:97px;
+}

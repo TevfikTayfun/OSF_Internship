@@ -8,7 +8,7 @@ body {
 }
 
 .set{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0px auto;
 }
 
@@ -23,6 +23,42 @@ body {
 .fixed-left {
     position: fixed;
     float: left;
+}
+
+.right{
+    float: right !important;
+}
+
+.left{
+    margin-left:-29px;
+}
+
+.top-10px{
+    top:10px;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
+.left-price{
+    margin-left:-85px;
+}
+
+.disable-on-big{
+    display: none;
+}
+
+.left-small{
+    margin-left:-69px;
+}
+
+.mr-10px{
+    margin-right:10px !important;
+}
+
+.mt-10px{
+    margin-top:10px !important;
 }
 
 .text-right {
@@ -67,18 +103,35 @@ body {
     flex:0;
 }
 
+
+.form-control:focus {
+    display: block !important;
+    width: 100% !important;
+    height: calc(1.5em + 0.75rem + 2px) !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    color: #495057 !important;
+    background-color: #fff !important;
+    background-clip: padding-box !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 0.25rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    box-shadow: none !important;
+}
+
 .green-text{
     color: #24c36c !important;
 }
 
 .cookie-container{
     top: 45%;
-    left: 19%;
     position:absolute;
     border-radius: 15px;
     display:none;
     z-index:5;
-    width: 1170px;
+    max-width: 1170px;
     height: 148px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -139,4 +192,11 @@ body {
     top: -96px;
 }
 
+.fadefade {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 5;
+}
 

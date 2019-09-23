@@ -109,6 +109,7 @@ a#navbarDropdown {
     padding-top: 18px;
 }
 
+
 .mega-bar-info{
     background-color: #262a32;
     font-family: Lato;
@@ -182,6 +183,7 @@ a#navbarDropdown {
     top:17px;
 }
 
+
 .login-but{
     margin-top:45px;
     margin-bottom:12px;
@@ -224,6 +226,14 @@ input:-internal-autofill-selected {
 sup {
     top: -0.8em;
     right: 1.2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .bag-normal>div:last-child {

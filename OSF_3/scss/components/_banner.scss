@@ -1,6 +1,6 @@
 // OSF-banner
 .osf-banner{
-    
+    width:1280px;
     position:relative;
     width: 100%;
 }
@@ -10,7 +10,7 @@
     top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 401px;
+    max-width: 401px;
     height: 38px;
     color: #ffffff;
     font-family: "Lato - Extra Bold";
@@ -27,7 +27,7 @@
     color: #ffffff;
     font-family: "Lato";
     font-weight: 400;
-    width: 334px;
+    max-width: 334px;
     height: 28px;
     font-size: 14px;
     text-align:center;

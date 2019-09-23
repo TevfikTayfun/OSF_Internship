@@ -31,12 +31,14 @@
 
 .services-background{
     margin:0 auto;
+    border-radius: 10px;
     background-color:#fff;
     width: 1169px;
     height: 165px;
     background-color: #ffffff;
     margin-bottom:31px;
 }
+
 
 .services-button{
     width: 197px;
@@ -87,7 +89,7 @@ a:hover{
     font-family: Lato;
     font-size: 13px;
     font-weight: 400;
-    padding-top: 133px;
+    padding-top: 33px;
 }
 
 .breadcrumb-item{
@@ -168,4 +170,12 @@ a:hover{
 
 .item-padding{
     margin-right:32px;
+}
+
+.mt-35{
+    margin-top:35px;
+}
+
+.mt-31{
+    margin-top:31px;
 }

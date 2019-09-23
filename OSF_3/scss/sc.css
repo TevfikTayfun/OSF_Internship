@@ -20,24 +20,6 @@ body {
   position: fixed;
   float: left; }
 
-.right {
-  float: right !important; }
-
-.left {
-  margin-left: -29px; }
-
-.left-price {
-  margin-left: -85px; }
-
-.left-small {
-  margin-left: -69px; }
-
-.mr-10px {
-  margin-right: 10px !important; }
-
-.mt-10px {
-  margin-top: 10px !important; }
-
 .text-right {
   text-align: right; }
 
@@ -72,27 +54,12 @@ body {
 .modal-body {
   flex: 0; }
 
-.form-control:focus {
-  display: block !important;
-  width: 100% !important;
-  height: calc(1.5em + 0.75rem + 2px) !important;
-  padding: 0.375rem 0.75rem !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  line-height: 1.5 !important;
-  color: #495057 !important;
-  background-color: #fff !important;
-  background-clip: padding-box !important;
-  border: 1px solid #ced4da !important;
-  border-radius: 0.25rem !important;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
-  box-shadow: none !important; }
-
 .green-text {
   color: #24c36c !important; }
 
 .cookie-container {
   top: 45%;
+  left: 19%;
   position: absolute;
   border-radius: 15px;
   display: none;
@@ -156,156 +123,6 @@ body {
   background-color: #000;
   opacity: 0.8;
   z-index: 5; }
-
-.error-container {
-  width: 1280px;
-  margin: 0 auto;
-  background-color: #f1edea; }
-
-.error-head {
-  width: 83px;
-  height: 37px;
-  color: #45413e;
-  font-family: "Lato - Extra Bold";
-  font-size: 48px;
-  font-weight: 400; }
-
-.error-div {
-  text-align: center;
-  margin-bottom: 56px; }
-
-.bread-class {
-  padding-top: 20px; }
-
-.image-container {
-  text-align: center;
-  position: relative;
-  padding-bottom: 41px; }
-
-.background-img {
-  position: relative;
-  width: 1170px;
-  margin: 0 auto; }
-
-.exclamation-img {
-  position: absolute;
-  left: 9px;
-  top: 63px; }
-
-.breadcrumb {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  background-color: #f1edea;
-  border-radius: 0.25rem;
-  justify-content: center;
-  color: #45413e;
-  font-family: Lato;
-  font-size: 13px;
-  font-weight: 400; }
-
-.oops {
-  position: absolute;
-  top: 205px;
-  left: 155px;
-  width: 289px;
-  height: 103px;
-  color: #84bc22;
-  font-family: "Lato - Extra Bold";
-  font-size: 113px;
-  font-weight: 400;
-  line-height: 60px;
-  z-index: 0; }
-
-.sorry {
-  position: absolute;
-  top: 71px;
-  left: 554px;
-  width: 381px;
-  height: 22px;
-  color: #000000;
-  font-family: "Lato - Extra Bold";
-  font-size: 24px;
-  font-weight: 400;
-  text-align: left; }
-
-.empty-space {
-  color: white; }
-
-.error-text {
-  white-space: nowrap;
-  position: absolute;
-  left: 554px;
-  top: 121px;
-  width: 546px;
-  height: 99px;
-  color: #555555;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left; }
-
-.go-back {
-  position: absolute;
-  left: 554px;
-  top: 268px; }
-
-.search {
-  position: absolute;
-  left: 554px;
-  top: 349px;
-  width: 159px;
-  height: 18px;
-  color: #000000;
-  font-family: "Lato - Extra Bold";
-  font-size: 24px;
-  font-weight: 400; }
-
-a:hover {
-  color: #84bc22; }
-
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  padding-right: 0.5rem;
-  color: #bdc3c7;
-  content: "/";
-  margin-left: 10px;
-  margin-right: 10px; }
-
-.breadcrumb-item.active {
-  color: black; }
-
-a {
-  color: #84bc22;
-  text-decoration: none;
-  background-color: transparent; }
-
-.search-bar {
-  width: 567px;
-  height: 36px;
-  border: 2px solid #e8e2d6;
-  position: absolute;
-  left: 554px;
-  top: 392px;
-  border-radius: 26px; }
-
-.search-info-img {
-  position: absolute;
-  left: 1092px;
-  top: 401px;
-  width: 18px;
-  height: 18px; }
-
-.line-404 {
-  border-bottom: 1px solid #fff;
-  padding-top: 106px;
-  height: 0px;
-  margin-bottom: 0px;
-  margin-top: 40px;
-  padding: 0px;
-  background-color: #d4c4b3; }
 
 .logo1 {
   width: 63px;
@@ -491,12 +308,6 @@ sup {
   top: -0.8em;
   right: 1.2em; }
 
-a {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: none; }
-
 .bag-normal > div:last-child {
   display: none; }
 
@@ -521,6 +332,67 @@ a:hover {
   border: 1px solid #84bc22;
   border-radius: 50%;
   padding: 1px 4px; }
+
+.shopping-container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #f1edea; }
+
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #f1edea;
+  border-radius: 0.25rem;
+  justify-content: center;
+  color: #45413e;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 400; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #bdc3c7;
+  content: "/";
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.breadcrumb-item.active {
+  color: black; }
+
+a {
+  color: #84bc22;
+  text-decoration: none;
+  background-color: transparent; }
+
+.empty-space-shop {
+  width: 434px;
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 33px; }
+
+.shopping-head {
+  width: 380px;
+  height: 37px;
+  color: #45413e;
+  font-family: "Lato - Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.shop-body {
+  width: 1170px;
+  height: 943px;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 37px; }
+
+.shop-pt {
+  padding-top: 97px; }
 
 .general-footer {
   background-color: #fff;
@@ -577,4 +449,26 @@ a:hover {
 .footer-manager:first-child {
   margin-left: 55px; }
 
-/*# sourceMappingURL=error.css.map */
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar-nav.row.w-100 {
+    height: fit-content; }
+
+  .navbar-nav.row.w-100 div.nav-item {
+    height: fit-content; }
+
+  .navbar-nav > div.col-4 {
+    display: none; }
+
+  .no-media {
+    display: none; } }
+@media (max-width: 767px) {
+  .navbar-nav-copy {
+    display: block; }
+
+  .no-media {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .no-media {
+    display: none; } }
+
+/*# sourceMappingURL=sc.css.map */

@@ -78,19 +78,22 @@ $(document).ready(function () {
 
     checkForBagCount();
     checkForWhishCount();
+    if (localStorage.getItem("cookie") == null) {
+        localStorage.setItem("cookie", "none");
+    }
 
     var dateTime = new Date();
 
     $(".loginAccept").on("click", function () {
-        var str = document.getElementById("myInput").value; 
-    if (str.match(/[a-z]/g) && str.match( 
-            /[A-Z]/g) && str.match( 
-            /[0-9]/g) && str.match( 
-            /[^a-zA-Z\d]/g) && str.length >= 6) 
-        alert("Correct password type");
-        
-    else 
-        alert("Enter the correct password type");
+        var str = document.getElementById("myInput").value;
+        if (str.match(/[a-z]/g) && str.match(
+            /[A-Z]/g) && str.match(
+                /[0-9]/g) && str.match(
+                    /[^a-zA-Z\d]/g) && str.length >= 6)
+            
+
+        else
+            alert("Enter the correct password type");
     });
 
     $(".load-more").on("click", function () {
@@ -98,19 +101,49 @@ $(document).ready(function () {
         loadCounter = loadCounter + 1;
     });
 
+    /*$('#print').click(function(){
+        $('.main-body').printThis({
+            debug:false,
+            importCSS:true,
+            importStyle:false,
+            printContainer:true,
+            loadCSS:"",
+            pageTitle:"",
+            removeInline:false,
+
+        });
+    })
+    */
+
     $(".footer-year").html(dateTime.getFullYear());
 
-    /*
-    setTimeout(function () {
-        $("#showcookie").show();
-        $('body').css('background-color', 'rgba(128, 128, 128, 1)');
-    }, 10000);
+    if (localStorage.getItem("cookie") === "none") {
+        setTimeout(function () {
+            var showL = (w - 1770) / 2;
+            $("#showcookie").css("left", showL + "px");
+            $("#showcookie").show();
+            var w = $(document).width();
+            var h = $(document).height();
+            $(".fadefade").css("position", "absolute");
+            $(".fadefade").css("height", h + "px");
+            $(".fadefade").css("width", w + "px");
+            $(".fadefade").fadeIn();
 
-    $(".cookie-close").on("click", function(){
-        $(this).find(".cookie-container").css("display", "none");
+        }, 10000);
+    }
+
+    $(".cookie-close").on("click", function () {
+        $(".cookie-container").css("display", "none");
+        $(".fadefade").fadeOut();
     });
-    */
-   
+
+    $(".cookie-accept").on("click", function () {
+        $(".cookie-container").css("display", "none");
+        $(".fadefade").fadeOut();
+        localStorage.setItem("cookie", "done");
+    })
+
+
     $(".showPassword").on("click", function () {
         if ($("#myInput").attr("type") === "password") {
             $("#myInput").attr("type", "text");
