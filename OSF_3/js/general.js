@@ -84,17 +84,75 @@ $(document).ready(function () {
 
     var dateTime = new Date();
 
+    /*$(".loginAccept").on("click", function () {
+        var str = document.getElementById("myInput").value;
+        if (str.match(/[a-z]/g) && str.match(
+            /[A-Z]/g) && str.match(
+                /[0-9]/g) && str.match(
+                    /[^a-zA-Z\d]/g) && str.length >= 6)
+                }
+
+        else
+            alert("Enter the correct password type");
+    });*/
+
     $(".loginAccept").on("click", function () {
         var str = document.getElementById("myInput").value;
         if (str.match(/[a-z]/g) && str.match(
             /[A-Z]/g) && str.match(
                 /[0-9]/g) && str.match(
                     /[^a-zA-Z\d]/g) && str.length >= 6)
-            
+            console.log("Correct password type");
 
         else
-            alert("Enter the correct password type");
+            console.log("Enter the correct password type");
     });
+
+    var clickCountContact = 1;
+    var clickCount = 1;
+    var clickCountAbout = 1;
+
+
+    $(".mini-dropdown").on("click", function () {
+        if (clickCountContact % 2 === 0) {
+            $(".miniItems").css("display", "none");
+            clickCountContact = clickCountContact + 1;
+            
+        }
+        else {
+            $(".miniItems").css("display", "block");
+            clickCountContact = clickCountContact + 1;
+            console.log(clickCountContact);
+        }
+    })
+
+    $(".mini-dropdown-categoriest").on("click", function () {
+        if (clickCount % 2 === 0) {
+            $(".miniItems-categoriest").css("display", "none");
+            clickCount = clickCount + 1;
+            
+        }
+        else {
+            $(".miniItems-categoriest").css("display", "block");
+            clickCount = clickCount + 1;
+            console.log(clickCount);
+        }
+    })
+
+    $(".mini-dropdown-about").on("click", function () {
+        if (clickCountAbout % 2 === 0) {
+            $(".miniItems-about").css("display", "none");
+            clickCountAbout = clickCountAbout + 1;
+            
+        }
+        else {
+            $(".miniItems-about").css("display", "block");
+            clickCountAbout = clickCountAbout + 1;
+            console.log(clickCountAbout);
+        }
+    })
+
+
 
     $(".load-more").on("click", function () {
         loadMore(loadKeys[loadCounter + 1]);
@@ -116,6 +174,7 @@ $(document).ready(function () {
     */
 
     $(".footer-year").html(dateTime.getFullYear());
+
 
     if (localStorage.getItem("cookie") === "none") {
         setTimeout(function () {

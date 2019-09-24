@@ -51,10 +51,11 @@
 }
 
 .navbar{
-    position:fixed;
-    z-index:1;
-    width:1280px;
-    top:0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-width: 1280px;
+    top: 0;
 }
 
 .service-hov:hover{

@@ -41,6 +41,9 @@ body {
 .left-small {
   margin-left: -69px; }
 
+.media-car-disabled {
+  display: none; }
+
 .mr-10px {
   margin-right: 10px !important; }
 
@@ -211,7 +214,8 @@ body {
 .navbar {
   position: fixed;
   z-index: 1;
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   top: 0; }
 
 .service-hov:hover {
@@ -533,7 +537,7 @@ button.sale-button.follow-normal > div > span {
   margin-left: 2px; }
 
 .osf-cards {
-  width: 1280px;
+  max-width: 1280px;
   min-height: 1061px;
   background-color: #262a32; }
 
@@ -576,7 +580,7 @@ button.sale-button.follow-normal > div > span {
   margin-right: 134px; }
 
 .special-line-first {
-  width: 228px;
+  max-width: 228px;
   height: 3px;
   position: absolute;
   top: 50%;
@@ -584,7 +588,7 @@ button.sale-button.follow-normal > div > span {
 
 .special-line-second {
   height: 3px;
-  width: 228px;
+  max-width: 228px;
   position: absolute;
   top: 50%;
   left: 65%; }
@@ -637,7 +641,7 @@ button.sale-button.follow-normal > div > span {
   line-height: 18px; }
 
 .feat-green {
-  width: 63px;
+  max-width: 63px;
   height: 11px;
   color: #84bc22;
   font-family: "Lato - Extra Bold";
@@ -786,13 +790,14 @@ button.sale-button.follow-normal > div > span {
   position: relative; }
 
 .services-folder {
-  width: 231px;
-  height: 49px;
   color: #868380;
   font-family: "Myriad Pro";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px; }
+
+.ml-50px {
+  margin-left: 50px; }
 
 .spec-ml {
   margin-left: 50px; }
@@ -811,7 +816,7 @@ button.sale-button.follow-normal > div > span {
   color: white; }
 
 .osf-banner {
-  width: 1280px;
+  max-width: 1280px;
   position: relative;
   width: 100%; }
 
@@ -897,7 +902,8 @@ button.sale-button.follow-normal > div > span {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .osf-banner > img {
-    width: 320px; }
+    width: 100%;
+    height: 185px; }
 
   .navbar-nav.row.w-100 {
     height: fit-content; }
@@ -916,8 +922,135 @@ button.sale-button.follow-normal > div > span {
     padding-left: 0;
     margin-left: 0; }
 
+  .p-0px {
+    padding: 0 !important; }
+
+  .mini-media-image {
+    width: 100%;
+    height: 472px; }
+
+  .media-car-enabled {
+    display: block; }
+
+  .banner-head-mini {
+    width: 249px;
+    height: 24px;
+    color: #ffffff;
+    font-family: "Lato - Extra Bold";
+    font-size: 30px;
+    font-weight: 400;
+    top: 20%; }
+
+  .mini-center {
+    text-align: center;
+    float: left; }
+
+  .mini-recycle {
+    position: relative;
+    margin-top: 45%;
+    left: 24%; }
+
+  .header-mini-method {
+    position: relative;
+    margin-top: 39%; }
+
+  .mini-verification {
+    position: relative;
+    margin-top: 27%;
+    left: 35%; }
+
+  .mini-delivery {
+    position: relative;
+    margin-top: 21%;
+    left: 20%; }
+
+  .services-text-mini {
+    position: relative;
+    margin-top: 13%; }
+
+  .service-text-mini-knowledge {
+    position: relative;
+    margin-top: 10%; }
+
+  .services-text-mini-method {
+    position: relative;
+    margin-top: 19%; }
+
+  .mini-head {
+    position: relative;
+    margin-bottom: 10px; }
+
+  .miniItems {
+    display: none; }
+
+  .miniItems-categoriest {
+    display: none; }
+
+  .miniItems-about {
+    display: none; }
+
+  .header-mini-knowledge {
+    position: relative;
+    margin-top: 25%; }
+
+  .header-mini {
+    position: relative;
+    margin-top: 21%; }
+
+  .popular-media {
+    background-color: #262a32;
+    width: 100%; }
+
+  .services-text-mini {
+    color: #868380;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 0; }
+
+  .services-text-mini-knowledge {
+    position: relative;
+    margin-top: 20%; }
+
+  .banner-text-mini {
+    width: 276px;
+    height: 31px;
+    color: #fff;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px; }
+
+  .slide-text-mini {
+    width: 100%;
+    float: left;
+    height: 88px;
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    font-size: 28px;
+    font-weight: 700; }
+
+  .slide-text2-mini {
+    width: 100%;
+    float: left;
+    height: 132px;
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400; }
+
+  .m-0px {
+    margin: 0 !important; }
+
   div#navbarSupportedContent {
     background-color: #262a32; }
+
+  .navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+    margin-left: 6%;
+    margin-top: 1%; }
 
   .cookie-text {
     width: 320px; }
@@ -949,6 +1082,9 @@ button.sale-button.follow-normal > div > span {
     display: none; } }
 @media (min-width: 768px) and (max-width: 1279px) {
   .no-media {
+    display: none; } }
+@media (min-width: 1280px) {
+  .no-big-screen {
     display: none; } }
 
 /*# sourceMappingURL=index.css.map */
