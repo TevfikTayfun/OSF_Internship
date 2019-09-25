@@ -20,8 +20,11 @@
                 <div class="row pl-3 no-pl-on-mobile">
                     <div class="col-xl-2 col-12 no-pl-on-mobile">
                         <div class="center-logo">
-                            <a href="./index.html">
+                            <a href="./index.html" class="no-media">
                                 <img src="./img/Logo.png" class="logo1">
+                            </a>
+                            <a href="./index.html" class="no-big-screen">
+                                <img src="./img/Logo.png" class="logo2">
                             </a>
                         </div>
                     </div>
@@ -50,14 +53,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width:80%;">
                 <div class="navbar-nav row w-100 ml-4 mt-1">
                     <div class="col nav-item servicesDropdown col-sm-12 mb-0px ">
-                        <a class="nav-link service-hov dropdown-toggle drop-down-mobile m-0" href="#"
+                        <a class="nav-link service-hov dropdown-toggle drop-down-mobile m-0 pb-0-media pt-0-media" href="#"
                             id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             SERVICES
                         </a>
                         <div class="dropdown-menu w-100 pt-0 pb-0 mt-0 mega-dropdown-menu servicesDropdownMenu"
                             aria-labelledby="navbarDropdown">
-                            <div class="row mega-bar-info">
+
+                            <div class="row mega-bar-info no-media">
                                 <div class="col-xl-2 col-sm-12">
                                     <ul>
                                         <li class="mega-drop-head">
@@ -187,13 +191,13 @@
                         </div>
                     </div>
                     <div class="col nav-item col-sm-12">
-                        <a class="nav-link" href="# drop-down-mobile">COMPANY</a>
+                        <a class="nav-link pb-0-media pt-0-media pt-0-media media-nav-p" href="# drop-down-mobile">COMPANY</a>
                     </div>
                     <div class="col nav-item dropdown drop-down-mobile">
-                        <a class="nav-link" href="#">LIBRARY</a>
+                        <a class="nav-link pb-0-media pt-0-media media-nav-p" href="#">LIBRARY</a>
                     </div>
                     <div class="col nav-item drop-down-mobile">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link pb-0-media pt-0-media pt-0-media media-nav-p" href="#">CONTACT US</a>
                     </div>
                     <div class="col-xl-4 col-sm-12 mt-57 disable-on-big show-on-mobile">
                         <img src="./img/Layer_162.png" alt="" class="dropdown-img">
@@ -258,6 +262,7 @@
 
                 </div>
             </div>
+
         </nav>
 
         <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -299,8 +304,8 @@
             </div>
         </div>
 
-        <hr class="hr-marg">
-        <div class="row main-sliders pl-0 pr-0">
+        <hr class="hr-marg hr-marg-media">
+        <div class="row main-sliders pl-0 pr-0 no-media">
             <div class="col-sm-12 col-xl-9">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -351,7 +356,7 @@
                                     alt="...">
                             </div>
                             <div class="carousel-right-span mini-center">
-                                <div class="slide-text slide-text-mini">
+                                <div class="slide-text">
                                     <strong> Control and manage any
                                         <br> device with cloud solutions</strong>
                                 </div>
@@ -397,7 +402,6 @@
             </div>
         </div>
 
-
         <div class="cookie-container" id="showcookie">
             <div class="cookie-header">This website uses cookies</div>
             <div class="cookie-text">OSF uses its own and third-party cookies for statistical purposes, to know your
@@ -409,16 +413,66 @@
             <button class="cookie-accept">ACCEPT</button>
             <button class="cookie-close"><img src="./img/Layer_1 (1).png" alt=""></button>
         </div>
-
-
-        <div class="popular-media no-big-screen">
-            <div class="col-sm-12 col-xl-9">
+        <div class="media-space">
+            <div class="no-big-screen media-caro media-w90">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/Layer_3.png" class="d-block w-100 media-caro" alt="...">
 
+                            <div class="carousel-left-span mini-center">
+                                    <div class="slide-text">
+                                        <strong> Control and manage any
+                                            <br> device with cloud solutions</strong>
+                                    </div>
+                                    <div class="slide-text2">
+                                        Improve business performance and user experience
+                                        <br> with the right mix of IoT technology and processes
+                                    </div>
+                                    <button class="slide-button"><a href="./clp.html">View More</a></button>
+                                </div>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Layer_4.png" class="d-block w-100 media-caro" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/Layer_5.png" class="d-block w-100 media-caro" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular-media no-big-screen">
+            <div class="popular-text-media media-w90 m-0">
+                <div class="row w-100 m-0 pt-5 pb-3">
+                    <div class="col-sm-3">
+
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <span class="pop-media">Popular Items</span>
+                    </div>
+                    <div class="col-sm-3">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-xl-9 pb-72px">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators media-bot">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -1113,13 +1167,13 @@
 
                 </div>
             </div>
-            <div class="row footer-manager p-0px m-0px no-big-screen">
+            <div class="row footer-manager p-0px m-0px no-big-screen footer-media special-footer-pad">
                 <div class="col-12 p-0px m-0px pl-5">
-                    <div class="mini-head mt-3">&copy; Copyright
+                    <div class="mini-head mt-3 p-0 m-0">&copy; Copyright
                         <span class="footer-year"></span>
                         <br> All rights reserved</div>
-                    <div class="row">
-                        <div class="col-sm-12 mini-head mini-dropdown p-0 m-0">
+                    <div class="row w-100 ">
+                        <div class="col-sm-12 mini-head mini-dropdown">
                             CONTACT</div>
                         <div class=" row col-sm-12 miniItems">
                             <div class="col-sm-12">Headquarters</div>
@@ -1129,15 +1183,15 @@
                                 <a href="mailto:contact@osf-global.com">contact@osf-global.com</a>
                             </div>
                             <br>
-                            <div class="col-sm-12">
-                                <a href="tel:+1 (888) 548-4344">+1 (888) 548-4344</a>
+                            <div class="space-med col-sm-12">
+                                <a href="tel:+1 (888) 548-4344">+1 (888) 548-4344 </a>
                             </div>
                         </div>
 
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12 mini-head mini-dropdown-categoriest p-0 m-0">
+                    <div class="row p-0 m-0 w-100">
+                        <div class="col-sm-12 mini-head mini-dropdown-categoriest p-0 ">
                             CATEGORIEST</div>
                         <div class=" row col-sm-12 miniItems-categoriest">
                             <div class="col-sm-12"><a href="error.html">Alcohol</a></div>
@@ -1156,22 +1210,22 @@
                             <div class="col-sm-12"><a href="error.html">Sport</a></div>
                             <div class="col-sm-12"><a href="error.html">Toys</a></div>
                             <div class="col-sm-12"><a href="error.html">Travel</a></div>
-                            <div class="col-sm-12"><a href="error.html">Women's Fashion</a></div>
+                            <div class="col-sm-12 space-med"><a href="error.html">Women's Fashion</a></div>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-12 mini-head mini-dropdown-about p-0 m-0">
+                    <div class="row w-100">
+                        <div class="col-sm-12 mini-head mini-dropdown-about">
                             ABOUT</div>
                         <div class=" row col-sm-12 miniItems-about">
                             <div class="col-sm-12"><a href="error.html">About Us</a></div>
                             <div class="col-sm-12"><a href="error.html">Delivery</a></div>
                             <div class="col-sm-12"><a href="error.html">Testimonials</a></div>
-                            <div class="col-sm-12"><a href="error.html">Contact</a></div>
+                            <div class="col-sm-12 space-med"><a href="error.html">Contact</a></div>
                         </div>
                     </div>
 
-                    <div class="row mb-5 mt-2">
+                    <div class="row mb-5 mt-2 p-0 m-0">
                         <div class="col-1 offset-4"><a href="https://www.facebook.com">
                                 <img src="/OSF_Internship/OSF_3/img/f(1).png" alt=""></div>
                         <div class="col-1"><a href="https://www.google.com">

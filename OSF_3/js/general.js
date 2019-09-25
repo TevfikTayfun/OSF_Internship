@@ -105,8 +105,25 @@ $(document).ready(function () {
             console.log("Correct password type");
 
         else
-            console.log("Enter the correct password type");
+            alert("Enter the correct password type");
     });
+
+
+    var readMore = document.getElementsByClassName("read-more");
+    var moreText = document.getElementsByClassName("more");
+  
+
+    $(".read-more").on("click", function(){
+        $(".read-more").css("display", "none");  
+        $(".more").css("display", "inline");         
+    })
+
+    $("selector a").mouseOver(function(e){
+        e.preventDefault();
+        $('.model-image-main img').attr("src", $(this).attr("href"));
+    })
+
+
 
     var clickCountContact = 1;
     var clickCount = 1;
