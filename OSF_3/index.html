@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./font/Lato-ExtraBold.ttf">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css">
     <link rel="stylesheet" href="./scss/index.css">
     <title>Document</title>
@@ -51,10 +50,17 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="width:80%;">
-                <div class="navbar-nav row w-100 ml-4 mt-1">
-                    <div class="col nav-item servicesDropdown col-sm-12 mb-0px ">
-                        <a class="nav-link service-hov dropdown-toggle drop-down-mobile m-0 pb-0-media pt-0-media" href="#"
-                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                <div class="navbar-nav row w-100 ml-4 mt-1 no-big-screen">
+                    <div class="col nav-item">
+                        <div class="col-sm-12 mini-head mini-dropdown mini-footer-click" style="color: #fff;">
+                            SERVICES <img src="./img/down_icon.png" alt="" class="icon-media">
+                            <img src="./img/up_icon.png" alt="" class="icon-media-spec"></div>
+                    </div>
+                </div>
+                <div class="navbar-nav row w-100 ml-4 mt-1  no-media">
+                    <div class="col nav-item servicesDropdown col-sm-12 mb-0px">
+                        <a class="nav-link service-hov dropdown-toggle drop-down-mobile m-0 pb-0-media pt-0-media"
+                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
                             SERVICES
                         </a>
@@ -191,7 +197,8 @@
                         </div>
                     </div>
                     <div class="col nav-item col-sm-12">
-                        <a class="nav-link pb-0-media pt-0-media pt-0-media media-nav-p" href="# drop-down-mobile">COMPANY</a>
+                        <a class="nav-link pb-0-media pt-0-media pt-0-media media-nav-p"
+                            href="# drop-down-mobile">COMPANY</a>
                     </div>
                     <div class="col nav-item dropdown drop-down-mobile">
                         <a class="nav-link pb-0-media pt-0-media media-nav-p" href="#">LIBRARY</a>
@@ -202,7 +209,7 @@
                     <div class="col-xl-4 col-sm-12 mt-57 disable-on-big show-on-mobile">
                         <img src="./img/Layer_162.png" alt="" class="dropdown-img">
                     </div>
-                    <div class="col nav-item">
+                    <div class="col nav-item no-media">
                         <a class="nav-link dropdown-toggle drop-down-mobile disabled" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             EN
@@ -211,7 +218,7 @@
 
                         </div>
                     </div>
-                    <div class="col nav-item us-special">
+                    <div class="col nav-item us-special no-media">
                         <a class="nav-link dropdown-toggle drop-down-mobile disabled align pr-6" href="#"
                             id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -415,28 +422,28 @@
         </div>
         <div class="media-space">
             <div class="no-big-screen media-caro media-w90">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./img/Layer_3.png" class="d-block w-100 media-caro" alt="...">
 
                             <div class="carousel-left-span mini-center">
-                                    <div class="slide-text">
-                                        <strong> Control and manage any
-                                            <br> device with cloud solutions</strong>
-                                    </div>
-                                    <div class="slide-text2">
-                                        Improve business performance and user experience
-                                        <br> with the right mix of IoT technology and processes
-                                    </div>
-                                    <button class="slide-button"><a href="./clp.html">View More</a></button>
+                                <div class="slide-text-mini">
+                                    <strong> Control and manage any
+                                        <br> device with cloud solutions</strong>
                                 </div>
-                            
+                                <div class="slide-text2-mini">
+                                    Improve business performance and user experience
+                                    <br> with the right mix of IoT technology and processes
+                                </div>
+                                <button class="slide-button"><a href="./clp.html">View More</a></button>
+                            </div>
+
                         </div>
                         <div class="carousel-item">
                             <img src="./img/Layer_4.png" class="d-block w-100 media-caro" alt="...">
@@ -452,13 +459,13 @@
         <div class="popular-media no-big-screen">
             <div class="popular-text-media media-w90 m-0">
                 <div class="row w-100 m-0 pt-5 pb-3">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 media-line">
 
                     </div>
                     <div class="col-sm-6 text-center">
                         <span class="pop-media">Popular Items</span>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 media-line">
 
                     </div>
 
@@ -466,18 +473,18 @@
             </div>
 
             <div class="col-sm-12 col-xl-9 pb-72px">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators media-bot">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="col-xl-3 col-sm-12">
-                                <div class="card card-stats buy-card-hover m-0px">
+                                <div class="card card-stats buy-card-hover m-auto">
                                     <img src="./img/Layer_151.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text">Kristina Dam Oak Table With White Marble Top</p>
@@ -503,7 +510,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xl-3 col-sm-12">
-                                <div class="card card-stats m-0px">
+                                <div class="card card-stats m-auto">
                                     <img src="./img/Layer_152.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text mb-2">Hay - About A Lounge
@@ -526,7 +533,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xl-3 col-sm-12">
-                                <div class="card card-stats buy-card-hover m-0px">
+                                <div class="card card-stats buy-card-hover m-auto">
                                     <img src="./img/Layer_155.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text">Activate Facial Mask and
@@ -552,7 +559,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xl-3 col-sm-12">
-                                <div class="card card-stats buy-card-hover m-0px">
+                                <div class="card card-stats buy-card-hover m-auto">
                                     <img src="./img/Layer_154.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text">Cocktail Table Walnut
@@ -578,7 +585,7 @@
                         </div>
                         <div class="carousel-item">
                             <div class="col-xl-3 col-sm-12">
-                                <div class="card card-stats buy-card-hover m-0px">
+                                <div class="card card-stats buy-card-hover m-auto">
                                     <img src="./img/Layer_155.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <p class="card-text">Hay - About A Lounge
@@ -1173,8 +1180,9 @@
                         <span class="footer-year"></span>
                         <br> All rights reserved</div>
                     <div class="row w-100 ">
-                        <div class="col-sm-12 mini-head mini-dropdown">
-                            CONTACT</div>
+                        <div class="col-sm-12 mini-head mini-dropdown mini-footer-click">
+                            CONTACT <img src="./img/down_icon.png" alt="" class="icon-media">
+                            <img src="./img/up_icon.png" alt="" class="icon-media-spec"></div>
                         <div class=" row col-sm-12 miniItems">
                             <div class="col-sm-12">Headquarters</div>
                             <div class="col-sm-12">5600, Blvd des Galeries, Bur 530</div>
@@ -1191,55 +1199,95 @@
                     </div>
 
                     <div class="row p-0 m-0 w-100">
-                        <div class="col-sm-12 mini-head mini-dropdown-categoriest p-0 ">
-                            CATEGORIEST</div>
-                        <div class=" row col-sm-12 miniItems-categoriest">
-                            <div class="col-sm-12"><a href="error.html">Alcohol</a></div>
-                            <div class="col-sm-12"><a href="error.html">Art</a></div>
-                            <div class="col-sm-12"><a href="error.html">Books</a></div>
-                            <div class="col-sm-12"><a href="error.html">Drink</a></div>
-                            <div class="col-sm-12"><a href="error.html">Electronics</a></div>
-                            <div class="col-sm-12"><a href="error.html">Home</a></div>
-                            <div class="col-sm-12"><a href="error.html">Jewelry</a></div>
-                            <div class="col-sm-12"><a href="error.html">Kids & Baby</a></div>
-                            <div class="col-sm-12"><a href="error.html">Men's Fashion</a></div>
-                            <div class="col-sm-12"><a href="error.html">Mobile</a></div>
-                            <div class="col-sm-12"><a href="error.html">Motorcycles</a></div>
-                            <div class="col-sm-12"><a href="error.html">Movies</a></div>
-                            <div class="col-sm-12"><a href="error.html">Music</a></div>
-                            <div class="col-sm-12"><a href="error.html">Sport</a></div>
-                            <div class="col-sm-12"><a href="error.html">Toys</a></div>
-                            <div class="col-sm-12"><a href="error.html">Travel</a></div>
-                            <div class="col-sm-12 space-med"><a href="error.html">Women's Fashion</a></div>
-                        </div>
+                        <div class="col-sm-12 mini-head mini-dropdown-categoriest p-0 mr-4 mini-footer-click">
+                            CATEGORIEST <img src="./img/down_icon.png" alt="" class="icon-media-cat">
+                            <img src="./img/up_icon.png" alt="" class="icon-media-spec"></div>
                     </div>
-
-                    <div class="row w-100">
-                        <div class="col-sm-12 mini-head mini-dropdown-about">
-                            ABOUT</div>
-                        <div class=" row col-sm-12 miniItems-about">
-                            <div class="col-sm-12"><a href="error.html">About Us</a></div>
-                            <div class="col-sm-12"><a href="error.html">Delivery</a></div>
-                            <div class="col-sm-12"><a href="error.html">Testimonials</a></div>
-                            <div class="col-sm-12 space-med"><a href="error.html">Contact</a></div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-5 mt-2 p-0 m-0">
-                        <div class="col-1 offset-4"><a href="https://www.facebook.com">
-                                <img src="/OSF_Internship/OSF_3/img/f(1).png" alt=""></div>
-                        <div class="col-1"><a href="https://www.google.com">
-                                <img src="/OSF_Internship/OSF_3/img/g+.png" alt="">
-                            </a></div>
-                        <div class="col-1"><a href="https://www.twitter.com">
-                                <img src="/OSF_Internship/OSF_3/img/t.png" alt="">
-                            </a></div>
-                        <div class="col-1"><a href="https://www.pinterest.com">
-                                <img src="/OSF_Internship/OSF_3/img/p.png" alt="">
-                            </a></div>
+                    <div class=" row col-sm-12 miniItems-categoriest">
+                        <div class="col-sm-12"><a href="error.html">Alcohol</a></div>
+                        <div class="col-sm-12"><a href="error.html">Art</a></div>
+                        <div class="col-sm-12"><a href="error.html">Books</a></div>
+                        <div class="col-sm-12"><a href="error.html">Drink</a></div>
+                        <div class="col-sm-12"><a href="error.html">Electronics</a></div>
+                        <div class="col-sm-12"><a href="error.html">Home</a></div>
+                        <div class="col-sm-12"><a href="error.html">Jewelry</a></div>
+                        <div class="col-sm-12"><a href="error.html">Kids & Baby</a></div>
+                        <div class="col-sm-12"><a href="error.html">Men's Fashion</a></div>
+                        <div class="col-sm-12"><a href="error.html">Mobile</a></div>
+                        <div class="col-sm-12"><a href="error.html">Motorcycles</a></div>
+                        <div class="col-sm-12"><a href="error.html">Movies</a></div>
+                        <div class="col-sm-12"><a href="error.html">Music</a></div>
+                        <div class="col-sm-12"><a href="error.html">Sport</a></div>
+                        <div class="col-sm-12"><a href="error.html">Toys</a></div>
+                        <div class="col-sm-12"><a href="error.html">Travel</a></div>
+                        <div class="col-sm-12 space-med"><a href="error.html">Women's Fashion</a></div>
                     </div>
                 </div>
+
+                <div class="row w-100">
+                    <div class="col-sm-12 mini-head mini-dropdown-about mini-footer-click">
+                        ABOUT <img src="./img/down_icon.png" alt="" class="icon-media-ab">
+                        <img src="./img/up_icon.png" alt="" class="icon-media-ab-spec"></div>
+                </div>
+                <div class=" row col-sm-12 miniItems-about">
+                    <div class="col-sm-12"><a href="error.html">About Us</a></div>
+                    <div class="col-sm-12"><a href="error.html">Delivery</a></div>
+                    <div class="col-sm-12"><a href="error.html">Testimonials</a></div>
+                    <div class="col-sm-12 space-med"><a href="error.html">Contact</a></div>
+                </div>
             </div>
+
+            <div class="row mb-5 mt-2 p-0 m-0">
+                <div class="col-1 offset-4"><a href="https://www.facebook.com">
+                        <img src="/OSF_Internship/OSF_3/img/f(1).png" alt=""></div>
+                <div class="col-1"><a href="https://www.google.com">
+                        <img src="/OSF_Internship/OSF_3/img/g+.png" alt="">
+                    </a></div>
+                <div class="col-1"><a href="https://www.twitter.com">
+                        <img src="/OSF_Internship/OSF_3/img/t.png" alt="">
+                    </a></div>
+                <div class="col-1"><a href="https://www.pinterest.com">
+                        <img src="/OSF_Internship/OSF_3/img/p.png" alt="">
+                    </a></div>
+            </div>
+
+            <div class="row no-big-screen">
+                <div class="col">
+                    <img src="./img/search.png">
+                </div>
+                <div class="col" data-toggle="modal" data-target="#modalLoginForm">
+                    <img src="./img/login.png">
+
+                </div>
+                <div class="col heart-normal">
+                    <div>
+                        <img src="./img/heart.png">
+                        <sup>0</sup>
+
+                    </div>
+                    <div>
+                        <img src="./img/Heart_Outline_Rounded_Shape._Attribute_as_Freepik_from_Flaticon.com.svg" alt=""
+                            class="heart-hover">
+                        <sup>0</sup>
+                    </div>
+
+                </div>
+                <div class="col bag-normal">
+                    <div>
+                        <img src="./img/bag.png">
+                        <sup>0</sup>
+                    </div>
+                    <div>
+
+                        <img src="./img/Bag_For_Shopping._Attribute_as_SimpleIcon_from_Flaticon.com.svg" alt=""
+                            class="bag-hover">
+                        <sup>0</sup>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </div>
     </div>
     </footer>
 
