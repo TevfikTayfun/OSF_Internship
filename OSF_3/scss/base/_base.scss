@@ -132,14 +132,27 @@ body {
 
 .cookie-container{
     top: 45%;
-    position:absolute;
-    border-radius: 15px;
+    position:fixed;
+    left:20%;
+    border-radius: 12px;
     display:none;
+    height:auto;
     z-index:5;
     max-width: 1170px;
-    height: 148px;
     background-color: #ffffff;
     margin: 0 auto;
+}
+
+.mb-100px{
+    margin-bottom:100px;
+}
+
+.ml-200px{
+    margin-left:200px;
+}
+
+.ml-300px{
+    margin-left:300px;
 }
 
 .cookie-header{
@@ -193,8 +206,8 @@ body {
 
 .cookie-close{
     position: relative;
-    left: 84%;
-    top: -96px;
+    margin-left:90%;
+    margin-top: 10%;
 }
 
 .fadefade {

@@ -12,7 +12,7 @@
 }
 
 .popular-head.col-xl-5 {
-    border-bottom: 1px solid #fff;
+    border-bottom: 4px solid gray;
     padding-top: 106px;
     height: 0px;
     margin-bottom: 0px;
@@ -28,7 +28,7 @@
     width: 145px;
     height: 23px;
     color: #ffffff;
-    font-family: "Lato-ExtraBold";
+    font-family: "Lato";
     font-size: 24px;
     font-weight: 400;
     margin: 0 auto;
@@ -59,6 +59,15 @@
     position: absolute;
     top: 50%;
     right:55%;
+}
+
+.popular-big{
+    width: 145px;
+    height: 23px;
+    color: #ffffff;
+    font-family: lato;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .special-line-second{
@@ -160,16 +169,16 @@
 
 .featured-head{
     padding-top:43px;
-    font-family: "Lato - Extra Bold";
+    font-family: lato;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 900;
     color: #ffffff;
     text-align:center;
 }
 
 .featured-text{
     color: #ffffff;
-    font-family: "Lato - Regular";
+    font-family: lato;
     font-weight: 400;
     line-height: 36px;
     font-size: 18px;

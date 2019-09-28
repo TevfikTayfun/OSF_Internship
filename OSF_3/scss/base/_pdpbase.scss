@@ -1,11 +1,11 @@
 .pdp-container{
-    width: 1280px;
+    max-width: 1280px;
 	margin: 0 auto; 
     background-color: #f2edea;
 }
 
 .osf-cards{
-    width: 1280px;
+    max-width: 1280px;
     min-height:480px !important;
     background-color:#f2edea !important;
 }
@@ -27,6 +27,11 @@
 
 .ellipse-right{
     margin-right:5px;
+}
+
+.arrow-spec{
+    width: 15px;
+    height: 15px;
 }
 
 .counter{
@@ -59,9 +64,9 @@
     width: 176px;
     height: 45px;
     color: #45413e;
-    font-family: "Lato - Extra Bold";
+    font-family: Lato;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 900;
     margin-bottom:42px;
     margin-top:46px;
 }
@@ -90,11 +95,21 @@
     color:white;
     justify-content: center;
     margin: 0 auto;
-
 }
 
 .share{
     margin-top:36px;
+    margin-bottom:26px;
+}
+
+.popular-accurate{
+    text-align:center;
+    text-transform: uppercase;
+    font-family: lato;
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom:23px;
+    padding-top: 48px;
 }
 
 #share-text{
@@ -112,6 +127,8 @@
     margin-left:33px;
     border: 1px solid gray;
 }
+
+
 
 .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
@@ -156,17 +173,50 @@ a:hover{
     margin-bottom: 54px;
 }
 
+.tab-container{
+    width:100%;
+    height: 50px;
+}
+
+.tab-container .button-container {
+    height:15%;
+}
+
+.tab-container .button-container button{
+    width: 25%;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:10px;
+    font-family: lato;
+    font-size: 24px;
+    background-color: #2e2e2e;
+}
+
+.tab-container .tab-panel{
+    height: 85%;
+    background-color: #2e2e2e;
+    color: white;
+    text-align:left;
+    padding-top:100px;
+    box-sizing: border-box;
+    font-family:lato;
+    font-size:20px;
+    display:none;
+}
+
 .main-body{
     margin: 0 auto;
-    width: 1170px;
-    height: 957px;
+    max-width: 1170px;
+    height: auto;
     background-color:#fff;
     border-radius: 8px;
 }
 
 .model-image-main{
     width: 578px;
-    height: 526px;  
+    max-height: 526px;  
     margin-top:14px;
     margin-left:16px;
 }

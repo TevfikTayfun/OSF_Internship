@@ -70,31 +70,36 @@ var loadMoreSuccess = function (response, key) {
 
 var totalSumPrice = function () {
     $(".product-bold-price").html().split("$");
-        parseFloat($(".product-bold-price").html().split("$")[1]);
-        var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
-        priceHolder = parseInt(priceHolder[0] + priceHolder[1]);
+    parseFloat($(".product-bold-price").html().split("$")[1]);
+    var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
+    priceHolder = parseInt(priceHolder[0] + priceHolder[1]);
 
-        $(".product-bold-price2").html().split("$");
-        parseFloat($(".product-bold-price2").html().split("$")[1]);
-        var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
-        priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
+    $(".product-bold-price2").html().split("$");
+    parseFloat($(".product-bold-price2").html().split("$")[1]);
+    var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
+    priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
 
-        $(".totalSum").html(priceHolder + priceHolder2 + "$");
+    $(".totalSum").html(priceHolder + priceHolder2 + "$");
 }
 
 
 $(document).ready(function () {
 
+    $(".scroll-to-top").on("click", function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 100);
+    });
+
 
     var path = window.location.pathname;
     path = path.split("/");
     path = path[path.length - 1];
-    if(path === "sc.html"){
+    if (path === "sc.html") {
         totalSumPrice();
     }
 
-
-    $(".local-shipment").on("click", function(){
+    $(".local-shipment").on("click", function () {
         $(".product-bold-price").html().split("$");
         parseFloat($(".product-bold-price").html().split("$")[1]);
         var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
@@ -105,8 +110,53 @@ $(document).ready(function () {
         var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
         priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
 
-        var totalSum = priceHolder + priceHolder2 + 50;
-        $(".totalshipsum").html(totalSum);
+        var totalSum = priceHolder + priceHolder2 + 5;
+        $(".totalshipsum").html(totalSum + "$");
+    })
+
+    $(".international").on("click", function () {
+        $(".product-bold-price").html().split("$");
+        parseFloat($(".product-bold-price").html().split("$")[1]);
+        var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
+        priceHolder = parseInt(priceHolder[0] + priceHolder[1]);
+
+        $(".product-bold-price2").html().split("$");
+        parseFloat($(".product-bold-price2").html().split("$")[1]);
+        var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
+        priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
+
+        var totalSum = priceHolder + priceHolder2 + 60;
+        $(".totalshipsum").html(totalSum + "$");
+    })
+
+    $(".free-pick").on("click", function () {
+        $(".product-bold-price").html().split("$");
+        parseFloat($(".product-bold-price").html().split("$")[1]);
+        var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
+        priceHolder = parseInt(priceHolder[0] + priceHolder[1]);
+
+        $(".product-bold-price2").html().split("$");
+        parseFloat($(".product-bold-price2").html().split("$")[1]);
+        var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
+        priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
+
+        var totalSum = priceHolder + priceHolder2;
+        $(".totalshipsum").html(totalSum + "$");
+    })
+
+    $(".flat-rate").on("click", function () {
+        $(".product-bold-price").html().split("$");
+        parseFloat($(".product-bold-price").html().split("$")[1]);
+        var priceHolder = $(".product-bold-price").html().split("$")[1].split(",")
+        priceHolder = parseInt(priceHolder[0] + priceHolder[1]);
+
+        $(".product-bold-price2").html().split("$");
+        parseFloat($(".product-bold-price2").html().split("$")[1]);
+        var priceHolder2 = $(".product-bold-price2").html().split("$")[1].split(",")
+        priceHolder2 = parseInt(priceHolder2[0] + priceHolder2[1]);
+
+        var totalSum = priceHolder + priceHolder2 + 10;
+        $(".totalshipsum").html(totalSum + "$");
     })
 
 
@@ -172,14 +222,14 @@ $(document).ready(function () {
         newValue = newValue.toFixed(2);
         $(".product-bold-price").html("$" + newValue);
         totalSumPrice();
-            
+
     })
 
     $(".scMinus").on("click", function () {
         var value = parseInt($(".scHowMany").html());
         if (value > 0) {
             $(".scHowMany").html(value - 1);
-            var newValue = 2195 * (value-1);
+            var newValue = 2195 * (value - 1);
             newValue = newValue.toFixed(2);
             $(".product-bold-price").html("$" + newValue);
             totalSumPrice();
@@ -194,14 +244,14 @@ $(document).ready(function () {
         newValue = newValue.toFixed(2);
         $(".product-bold-price2").html("$" + newValue);
         totalSumPrice();
-            
+
     })
 
     $(".scMinus2").on("click", function () {
         var value = parseInt($(".scHowMany2").html());
         if (value > 0) {
             $(".scHowMany2").html(value - 1);
-            var newValue = 1249 * (value-1);
+            var newValue = 1249 * (value - 1);
             newValue = newValue.toFixed(2);
             $(".product-bold-price2").html("$" + newValue);
             totalSumPrice();
@@ -210,11 +260,11 @@ $(document).ready(function () {
     })
 
 
-    $(".product-x-button1").on("click", function(){
+    $(".product-x-button1").on("click", function () {
         $(".removeClass1").remove();
     })
 
-    $(".product-x-button2").on("click", function(){
+    $(".product-x-button2").on("click", function () {
         $(".removeClass2").remove();
     })
 
@@ -236,6 +286,52 @@ $(document).ready(function () {
         $(".bag-normal sup").html(localStorage.getItem("bag"));
         $(".pdpHowMany").html(0);
     })
+
+
+    var clickCountServices = 1;
+    var clickCountSale = 1;
+    var clickCountProduct = 1;
+
+    $(".media-services").on("click", function () {
+        if (clickCountServices % 2 === 0) {
+            $(".mega-item-product").css("display", "none");
+            $(".mega-item-sale").css("display", "none");
+            clickCountServices = clickCountServices + 1;
+
+        }
+        else {
+            $(".mega-item-product").css("display", "block");
+            $(".mega-item-sale").css("display", "block");
+            clickCountServices = clickCountServices + 1;
+        }
+    })
+
+    $(".mega-item-product").on("click", function () {
+        if (clickCountProduct % 2 === 0) {
+            $(".mega-item-media2").css("display", "none");
+            clickCountProduct = clickCountProduct + 1;
+
+        }
+        else {
+            $(".mega-item-media2").css("display", "block");
+            clickCountProduct = clickCountProduct + 1;
+        }
+    })
+
+    $(".mega-item-sale").on("click", function () {
+        if (clickCountSale % 2 === 0) {
+            $(".mega-item-media3").css("display", "none");
+            clickCountSale = clickCountSale + 1;
+
+        }
+        else {
+            $(".mega-item-media3").css("display", "block");
+            clickCountSale = clickCountSale + 1;
+        }
+    })
+
+
+
 
     var clickCountContact = 1;
     var clickCount = 1;
@@ -283,6 +379,9 @@ $(document).ready(function () {
 
 
 
+
+
+
     $(".load-more").on("click", function () {
         loadMore(loadKeys[loadCounter + 1]);
         loadCounter = loadCounter + 1;
@@ -306,6 +405,9 @@ $(document).ready(function () {
         }, 10000);
     }
 
+
+
+
     $(".cookie-close").on("click", function () {
         $(".cookie-container").css("display", "none");
         $(".fadefade").fadeOut();
@@ -316,6 +418,8 @@ $(document).ready(function () {
         $(".fadefade").fadeOut();
         localStorage.setItem("cookie", "done");
     })
+
+
 
 
     $(".showPassword").on("click", function () {
@@ -329,6 +433,9 @@ $(document).ready(function () {
     $('.nav-link').on('click', function () {
         $(this).addClass('active')
     });
+
+
+
 
     $(".servicesDropdown").on("mouseover", function () {
         if ($(document).width() >= 768) {
@@ -347,6 +454,9 @@ $(document).ready(function () {
             $(".service-hov").css("background-color", "#fff");
         }
     })
+
+
+
 
     $(".to-add-cards").on("mouseover", ".buy-card-hover", function () {
         $(this).find(".buy-card-hover-gradient").css("display", "block");
@@ -384,6 +494,9 @@ $(document).ready(function () {
         $(".heart-normal sup").html(localStorage.getItem("wish"));
     })
 
+
+
+
     var imgContactCounter = 0;
     var imgCategoriesCounter = 0;
     var imgAboutCounter = 0;
@@ -391,31 +504,47 @@ $(document).ready(function () {
         value = $(this)[0].innerText;
         if (value === "CONTACT") {
             if (imgContactCounter % 2 == 0) {
+
                 $(this).find("img.icon-media").css("display", "none");
                 $(this).find("img.icon-media-spec").css("display", "block");
+
             } else {
+
                 $(this).find("img.icon-media").css("display", "block");
                 $(this).find("img.icon-media-spec").css("display", "none");
             }
             imgContactCounter = imgContactCounter + 1;
+
         } else if (value === "CATEGORIEST") {
+
             if (imgCategoriesCounter % 2 == 0) {
+
                 $(this).find("img.icon-media-cat").css("display", "none");
-                $(this).find("img.icon-media-spec").css("display", "block");
+                $(this).find("img.icon-media-spec-cat").css("display", "block");
+
             } else {
+
                 $(this).find("img.icon-media-cat").css("display", "block");
-                $(this).find("img.icon-media-spec").css("display", "none");
+                $(this).find("img.icon-media-spec-cat").css("display", "none");
             }
             imgCategoriesCounter = imgCategoriesCounter + 1;
         } else if (value === "ABOUT") {
+
             if (imgAboutCounter % 2 == 0) {
+
                 $(this).find("img.icon-media-ab").css("display", "none");
                 $(this).find("img.icon-media-ab-spec").css("display", "block");
+
             } else {
+
                 $(this).find("img.icon-media-ab").css("display", "block");
                 $(this).find("img.icon-media-ab-spec").css("display", "none");
             }
             imgAboutCounter = imgAboutCounter + 1;
         }
     })
+
+
+
+    
 });

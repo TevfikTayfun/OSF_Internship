@@ -105,12 +105,13 @@ body {
 
 .cookie-container {
   top: 45%;
-  position: absolute;
-  border-radius: 15px;
+  position: fixed;
+  left: 20%;
+  border-radius: 12px;
   display: none;
+  height: auto;
   z-index: 5;
   max-width: 1170px;
-  height: 148px;
   background-color: #ffffff;
   margin: 0 auto; }
 
@@ -159,8 +160,8 @@ body {
 
 .cookie-close {
   position: relative;
-  left: 84%;
-  top: -96px; }
+  margin-left: 90%;
+  margin-top: 10%; }
 
 .fadefade {
   display: none;
@@ -438,7 +439,7 @@ a:hover {
   color: #fff;
   font-size: 48px;
   margin-bottom: 110px;
-  font-family: "MyriadPro-Bold"; }
+  line-height: 1.2; }
 
 .slide-text2 {
   z-index: 2;
@@ -476,7 +477,7 @@ a:hover {
   color: white;
   font-size: 100px;
   font-family: "Lato";
-  font-weight: 400; }
+  font-weight: 900; }
 
 .summer-text2 {
   position: absolute;
@@ -547,7 +548,7 @@ button.sale-button.follow-normal > div > span {
   margin-bottom: 20px; }
 
 .popular-head.col-xl-5 {
-  border-bottom: 1px solid #fff;
+  border-bottom: 4px solid gray;
   padding-top: 106px;
   height: 0px;
   margin-bottom: 0px; }
@@ -559,7 +560,7 @@ button.sale-button.follow-normal > div > span {
   width: 145px;
   height: 23px;
   color: #ffffff;
-  font-family: "Lato-ExtraBold";
+  font-family: "Lato";
   font-size: 24px;
   font-weight: 400;
   margin: 0 auto;
@@ -585,6 +586,14 @@ button.sale-button.follow-normal > div > span {
   position: absolute;
   top: 50%;
   right: 55%; }
+
+.popular-big {
+  width: 145px;
+  height: 23px;
+  color: #ffffff;
+  font-family: lato;
+  font-size: 24px;
+  font-weight: 900; }
 
 .special-line-second {
   height: 3px;
@@ -670,15 +679,15 @@ button.sale-button.follow-normal > div > span {
 
 .featured-head {
   padding-top: 43px;
-  font-family: "Lato - Extra Bold";
+  font-family: lato;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
   text-align: center; }
 
 .featured-text {
   color: #ffffff;
-  font-family: "Lato - Regular";
+  font-family: lato;
   font-weight: 400;
   line-height: 36px;
   font-size: 18px;
@@ -791,7 +800,7 @@ button.sale-button.follow-normal > div > span {
 
 .services-folder {
   color: #868380;
-  font-family: "Myriad Pro";
+  font-family: lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px; }
@@ -804,11 +813,12 @@ button.sale-button.follow-normal > div > span {
 
 .services-header {
   width: 57px;
+  margin-bottom: 20px;
   height: 15px;
   color: #ffffff;
-  font-family: "Lato";
+  font-family: lato;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 24px;
   text-transform: uppercase; }
 
@@ -828,9 +838,10 @@ button.sale-button.follow-normal > div > span {
   max-width: 401px;
   height: 38px;
   color: #ffffff;
-  font-family: "Lato - Extra Bold";
+  font-family: Lato;
   font-size: 48px;
-  font-weight: 400; }
+  font-weight: 900;
+  white-space: nowrap; }
 
 .osf-banner-text {
   position: absolute;
@@ -900,7 +911,7 @@ button.sale-button.follow-normal > div > span {
 .footer-manager:first-child {
   margin-left: 55px; }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 1279px) {
   .osf-banner > img {
     width: 100%;
     height: 185px; }
@@ -917,6 +928,12 @@ button.sale-button.follow-normal > div > span {
   .no-media {
     display: none; }
 
+  .w-92 {
+    width: 92%; }
+
+  .mr-20px {
+    margin-right: 20px; }
+
   .center-logo {
     margin: 0 auto;
     padding-left: 0;
@@ -924,6 +941,9 @@ button.sale-button.follow-normal > div > span {
 
   .p-0px {
     padding: 0 !important; }
+
+  .empty-media {
+    display: inline; }
 
   .mini-media-image {
     width: 100%;
@@ -934,25 +954,56 @@ button.sale-button.follow-normal > div > span {
     float: right; }
 
   .icon-media-spec {
-    display: none; }
+    display: none;
+    padding-top: 6px;
+    float: right;
+    margin-right: !important -1px; }
+
+  .item-padding {
+    margin-right: 10px; }
 
   .icon-media-cat {
     padding-top: 6px;
-    float: right;
-    margin-right: 5px; }
+    float: right; }
+
+  .v-neck {
+    text-align: center;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 31px;
+    font-weight: 500;
+    margin-bottom: 60px; }
 
   .icon-media-ab-spec {
-    display: none; }
+    display: none;
+    padding-top: 6px;
+    float: right;
+    margin-right: !important -1px; }
+
+  .pr-0px {
+    padding-right: 0px; }
+
+  .card-stats {
+    margin: 0 auto; }
 
   .icon-media-ab {
     padding-top: 6px;
-    float: right;
-    margin-right: -2px; }
+    float: right; }
 
-  .icon-media-spec {
+  .ml-12px {
+    margin-left: 12px; }
+
+  .ml-9px {
+    margin-left: 9px; }
+
+  .counter {
+    margin-bottom: 30px; }
+
+  .icon-media-spec-cat {
+    display: none;
     padding-top: 6px;
     float: right;
-    padding-right: 5px; }
+    margin-right: !important -1px; }
 
   .media-car-enabled {
     display: block; }
@@ -963,27 +1014,83 @@ button.sale-button.follow-normal > div > span {
     color: #ffffff;
     font-family: "Lato - Extra Bold";
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 900;
+    white-space: nowrap;
     top: 20%; }
 
   .slide-text-mini {
     display: block;
-    text-align: left; }
+    text-align: left;
+    min-width: 260px;
+    color: #ffffff;
+    font-family: "MYRIADPRO-REGULAR";
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 8px;
+    margin-right: 5px;
+    margin-bottom: 35px; }
+
+  .slide-button-media {
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 400;
+    width: 147px;
+    height: 36px;
+    border: 2px solid #ffffff8f;
+    border-radius: 20px;
+    background: none;
+    color: #fff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    margin-top: 12%; }
+
+  .slide-button-media > a {
+    color: white; }
+
+  .slide-text2-mini {
+    top: 50px;
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    font-family: "MyriadPRO-REGULAR";
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 8px;
+    margin-right: 5px; }
 
   .carousel-left-span {
-    left: 0px; }
+    left: 0px;
+    top: 32px; }
 
   .m-auto {
     margin: 0 auto; }
 
-  .media-line {
-    border-bottom: 1px solid #fff;
-    padding-top: 15px;
-    height: 0px;
-    margin-bottom: 0px; }
+  .nav-bot-media {
+    background-color: #262a32;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%; }
+
+  .search-media {
+    left: 16%; }
+
+  .login-media {
+    left: 7%; }
+
+  .heart-media {
+    right: 2%; }
+
+  .bag-media {
+    right: 5%; }
 
   .special-footer-pad {
     padding-left: 13px !important; }
+
+  .heart-normal > div {
+    top: 0; }
+
+  .bag-normal > div {
+    top: 0; }
 
   .mini-center {
     text-align: center;
@@ -1013,7 +1120,8 @@ button.sale-button.follow-normal > div > span {
 
   .services-text-mini {
     position: relative;
-    margin-top: 13%; }
+    margin-top: 13%;
+    margin-right: 3%; }
 
   .service-text-mini-knowledge {
     position: relative;
@@ -1022,6 +1130,40 @@ button.sale-button.follow-normal > div > span {
   .services-text-mini-method {
     position: relative;
     margin-top: 19%; }
+
+  .mini-s {
+    font-size: 31px !important;
+    font-weight: 400;
+    color: #45413e;
+    font-family: "Lato";
+    text-align: center;
+    padding-bottom: 49px; }
+
+  .media-head {
+    color: #333333;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+  .mega-item-product {
+    display: none;
+    color: #fff; }
+
+  .mega-item-sale {
+    display: none;
+    color: #fff; }
+
+  .mega-item-media2 {
+    display: none;
+    color: #fff; }
+
+  .mega-item-media3 {
+    display: none;
+    color: #fff; }
+
+  .med-white > a {
+    color: #fff; }
 
   .mini-head {
     position: relative;
@@ -1050,7 +1192,7 @@ button.sale-button.follow-normal > div > span {
     color: #45413e;
     font-family: Lato;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 18px; }
 
   .miniItems {
@@ -1072,18 +1214,33 @@ button.sale-button.follow-normal > div > span {
   .pb-72px {
     padding-bottom: 72px; }
 
-  .pop-media {
-    color: #ffffff;
-    font-family: "Lato - Extra Bold";
-    font-size: 18px;
-    font-weight: 400; }
-
   .media-w90 {
     width: 90%;
     margin: 0 auto !important; }
 
   .media-bot {
     bottom: -50px !important; }
+
+  .scroll-to-top {
+    width: 153px;
+    height: 38px;
+    border: 2px solid #e8e2d6;
+    background-color: #85c441;
+    border-radius: 30px;
+    color: white;
+    justify-content: center;
+    margin: 0 auto; }
+
+  .scroll {
+    text-align: center;
+    padding-bottom: 65px; }
+
+  .scroll-text {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase; }
 
   .carousel-indicators {
     position: absolute;
@@ -1134,7 +1291,8 @@ button.sale-button.follow-normal > div > span {
 
   .media-caro {
     height: 472px;
-    margin: 0 auto !important; }
+    margin: 0 auto !important;
+    border-radius: 3px; }
 
   .media-space {
     margin-bottom: 20px; }

@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width:767px) {
+@media (min-width: 320px) and (max-width:1279px) {
     .osf-banner>img{
         width: 100%;
         height: 185px;
@@ -17,6 +17,15 @@
         display:none;
     }
 
+    .w-92{
+        width: 92%;
+    }
+
+    .mr-20px{
+        margin-right:20px;
+    }
+
+
     .center-logo{
         margin: 0 auto;
         padding-left:0;
@@ -25,6 +34,10 @@
 
     .p-0px{
         padding:0 !important;
+    }
+
+    .empty-media{
+        display:inline;
     }
 
     .mini-media-image{
@@ -39,28 +52,67 @@
 
     .icon-media-spec{
         display:none;
+        padding-top: 6px;
+        float: right;
+        margin-right: !important -1px;
+        
+    }
+
+    .item-padding{
+        margin-right:10px;
     }
 
     .icon-media-cat{
         padding-top: 6px;
-        float: right;
-        margin-right: 5px;
+        float:right;
+    }
+
+    .v-neck{
+        text-align:center;
+        color: #45413e;
+        font-family: "Lato";
+        font-size: 31px;
+        font-weight: 500;
+        margin-bottom:60px;
     }
 
     .icon-media-ab-spec{
         display:none;
+        padding-top: 6px;
+        float: right;
+        margin-right: !important -1px;
+    }
+
+
+    .pr-0px{
+        padding-right: 0px;
+    }
+
+    .card-stats{
+        margin:0 auto;
     }
 
     .icon-media-ab{
-        padding-top:6px;
-        float:right;
-        margin-right: -2px;
-    }
-
-    .icon-media-spec{
         padding-top: 6px;
         float:right;
-        padding-right:5px;
+    }
+
+    .ml-12px{
+        margin-left:12px;
+    }
+
+    .ml-9px{
+        margin-left:9px;
+    }
+    
+    .counter{
+        margin-bottom:30px;
+    }
+    .icon-media-spec-cat{
+        display:none;
+        padding-top: 6px;
+        float: right;
+        margin-right: !important -1px;
     }
 
     .media-car-enabled{
@@ -73,32 +125,100 @@
         color: #ffffff;
         font-family: "Lato - Extra Bold";
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 900;
+        white-space: nowrap;
         top: 20%;
     }
 
     .slide-text-mini{      
         display: block;
         text-align: left;
+        min-width: 260px;
+        color: #ffffff;
+        font-family: "MYRIADPRO-REGULAR";
+        font-size: 28px;
+        font-weight: 700;
+        margin-left: 8px;
+        margin-right: 5px;
+        margin-bottom:35px;
+    }
+
+    .slide-button-media{
+        z-index: 2;
+        font-size: 14px;
+        font-weight: 400;
+        width: 147px;
+        height: 36px;
+        border: 2px solid #ffffff8f;
+        border-radius: 20px;
+        background: none;
+        color: #fff;
+        opacity: 0.7;
+        text-transform:uppercase;
+        margin-top: 12%;
+
+    } 
+
+    .slide-button-media>a{
+        color:white
+
+    }
+
+    .slide-text2-mini{
+        top:50px;
+        display: block;
+        text-align: left;
+        color: #ffffff;
+        font-family: "MyriadPRO-REGULAR";
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 8px;
+        margin-right: 5px;
     }
 
     .carousel-left-span {
          left: 0px;
+         top: 32px;
     }
 
     .m-auto{
         margin: 0 auto;
     }
 
-    .media-line{
-        border-bottom: 1px solid #fff;
-        padding-top:15px;
-        height: 0px;
-        margin-bottom: 0px;
+
+    .nav-bot-media{
+        background-color:#262a32;
+        margin-left:0px;
+        margin-right:0px;
+        width:100%;
+    }
+
+    .search-media{
+        left:16%;
+    }
+
+    .login-media{
+        left: 7%;
+    }
+
+    .heart-media{
+        right:2%;
+    }
+
+    .bag-media{
+        right:5%;
     }
 
     .special-footer-pad{
         padding-left: 13px !important;
+    }
+
+    .heart-normal > div {
+        top:0;
+    }
+
+    .bag-normal > div {
+        top:0;
     }
 
     .mini-center{
@@ -137,7 +257,7 @@
     .services-text-mini{
         position: relative;
         margin-top: 13%;
-
+        margin-right: 3%;
     }
 
     .service-text-mini-knowledge{
@@ -148,6 +268,49 @@
     .services-text-mini-method{
         position: relative;
         margin-top: 19%;
+    }
+
+    .mini-s{
+        font-size: 31px !important;
+        font-weight: 400;
+        color: #45413e;
+        font-family: "Lato";
+        text-align: center;
+        padding-bottom: 49px;
+    }
+
+    .media-head{
+        color: #333333;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mega-item-product{
+        display:none;
+        color:#fff;
+    }
+
+    .mega-item-sale{
+        display:none;
+        color:#fff;
+
+    }
+
+    .mega-item-media2{
+        display:none;
+        color:#fff;
+
+    }
+
+    .mega-item-media3{
+        display:none;
+        color:#fff;
+    }
+
+    .med-white>a{
+        color: #fff;
     }
     
     .mini-head{
@@ -185,7 +348,7 @@
         color: #45413e;
         font-family: Lato;
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 18px;
     }
     .miniItems{
@@ -213,12 +376,6 @@
         padding-bottom:72px;
     }
 
-    .pop-media{
-        color: #ffffff;
-        font-family: "Lato - Extra Bold";
-        font-size: 18px;
-        font-weight: 400;
-    }
 
     .media-w90{
         width:90%;
@@ -227,6 +384,30 @@
 
     .media-bot{
         bottom:-50px !important;
+    }
+
+    .scroll-to-top{
+        width: 153px;
+        height: 38px;
+        border: 2px solid #e8e2d6;
+        background-color: #85c441;
+        border-radius: 30px;
+        color:white;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .scroll{
+        text-align:center;
+        padding-bottom:65px;
+    }
+
+    .scroll-text{
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 200;
+        text-transform: uppercase;  
     }
 
     .carousel-indicators {
@@ -291,6 +472,7 @@
     .media-caro{
         height: 472px;
         margin:0 auto !important;
+        border-radius: 3px;
     }
 
     .media-space{
@@ -307,6 +489,26 @@
 
     .m-0px{
         margin:0 !important;
+    }
+
+    .error-mini-media{
+       text-align: center;
+       margin-bottom: 25px;
+    }
+    
+    .error-mini{
+        color: #85c441;
+        margin-bottom: 25px;
+    }
+
+    .error-mini-media span a{
+        color: #85c441;
+    }
+
+    .arrow-hide{
+        display:none;
+        width: 15px;
+        height: 15px;
     }
 
     div#navbarSupportedContent {
@@ -328,6 +530,7 @@
     .cookie-text{
         width:320px;
     }
+
 
     .navbar-light .navbar-nav .nav-link {
         color: #fff;

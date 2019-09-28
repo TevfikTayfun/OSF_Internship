@@ -1,5 +1,5 @@
 .shopping-container{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     background-color: #f1edea;
 }
@@ -32,6 +32,192 @@
     color: black;
 }
 
+.product-text-shop{
+    width: 305px;
+    height: 16px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+.product-price-shop{
+    width: 63px;
+    height: 14px;
+    color: #bdc3c7;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-bold-price{
+    width: 88px;
+    height: 30px;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product-bold-price2{
+    width: 88px;
+    height: 30px;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product-x-button1{
+    border: 2px solid rgba(128, 128, 128, 0.205);
+    opacity: 0.7;
+    border-radius: 100px;
+    padding: 4px;
+    cursor:pointer;
+}
+
+.product-x-button2{
+    border: 2px solid rgba(128, 128, 128, 0.205);
+    opacity: 0.7;
+    border-radius: 100px;
+    padding: 4px;
+    cursor:pointer;
+}
+
+.scPlus{
+    margin-left: 20%;
+}
+
+.scMinus{
+    margin-right:20%;
+}
+
+.scPlus2{
+    margin-left: 20%;
+}
+
+.scMinus2{
+    margin-right:20%;
+}
+
+.product-control-button{
+    width: 100px;
+    height: 36px;
+    border: 2px solid #e8e2d6;
+    background-color:transparent;
+    border-radius: 20px;
+}
+
+.coupon{
+    width: 216px;
+    height: 36px;
+    border: 2px solid #e8e2d6;
+    border-radius:25px;
+}
+
+.update-cart{
+    width: 160px;
+    height: 36px;
+    border: 2px solid #84bc22;
+    background-color: transparent;
+    color:#84bc22;
+    border-radius: 50px;
+    cursor:pointer;
+}
+
+.proceed-to-checkout{
+    width: 261px;
+    height: 36px;
+    border: 2px solid #84bc22;
+    background-color: #84bc22;
+    border-radius: 50px;
+}
+
+.totalSum{
+    width: 44px;
+    height: 15px;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.bold-total{
+    width: 186px;
+    height: 11px;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.totalshipsum{
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sub-total{
+    width: 96px;
+    height: 10px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.proceed-to-checkout span{
+    width: 163px;
+    height: 11px;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.update-cart span{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.apply{
+    width: 111px;
+    height: 36px;
+    border: 2px solid #84bc22;
+    border-radius: 25px;
+    background:transparent;
+}
+
+.apply {
+    color: #84bc22;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.coupon::placeholder{
+    margin-left:10px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 .shop-pt-31px{
     margin-top:31px;
 }
@@ -55,17 +241,17 @@ a {
 }
 
 .shopping-head{
-    width: 380px;
+    max-width: 380px;
     height: 37px;
     color: #45413e;
-    font-family: "Lato - Extra Bold";
+    font-family: "Lato";
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
 .shop-body{
-    width: 1170px;
+    max-width: 1170px;
     height: 943px;
     margin:0 auto;
     background-color:white;
