@@ -1,0 +1,96 @@
+.countdown-container{
+    max-width:1280px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.countdown-body{
+    max-width: 1169px;
+    height: 564px;
+    background-color: white;
+    margin:auto;
+    margin-top:58px;
+    margin-bottom:56px;
+}
+
+.e-mail-holder{
+    width: 486px;
+    height: 36px;
+    border: 2px solid gray;
+    opacity: 0.5;
+    border-radius: 30px;
+}
+
+.contain-time{
+    margin-top: 93px;
+}
+
+.text-time{
+    width: 43px;
+    height: 13px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#days, #hours, #minutes, #seconds{
+    padding:20px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 30px;
+}
+
+.contain-time input{
+    color: #45413e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align:center;
+}
+
+.submit-time{
+    top: 606px;
+    position: absolute;
+    right: 411px;
+}
+
+.countdown-head{
+    padding-top:55px;
+    width: 416px;
+    height: 28px;
+    color: #45413e;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom:10px;
+}
+
+.countdown-text{
+    width: 472px;
+    height: 33px;
+    color: #45413e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top:40px;
+    white-space: nowrap;
+
+}
+
+.time-holder{
+    margin-top:100px;
+}

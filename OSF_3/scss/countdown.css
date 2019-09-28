@@ -396,475 +396,90 @@ a:hover {
   border-radius: 50%;
   padding: 3px 3px; }
 
-.main-sliders {
-  width: 92%;
-  height: 505px;
-  margin: 0 auto;
-  margin-bottom: 27px; }
-
-.main-slider-image-master {
-  position: relative;
-  float: left;
-  width: 100%;
-  text-align: center; }
-
-.carousel-left-span {
-  position: absolute;
-  width: 100%;
-  text-align: left;
-  left: 67px;
-  top: 75px; }
-
-.carousel-right-span {
-  position: absolute;
-  width: 100%;
-  text-align: right;
-  top: 75px;
-  right: 67px; }
-
-.carousel-center-span {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 75px; }
-
-.carousel-indicators > li {
-  height: 8px;
-  width: 8px;
-  border: 3px solid transparent;
-  border-radius: 8px; }
-
-.carousel-control-prev {
-  z-index: 0; }
-
-.carousel-control-next {
-  z-index: 0; }
-
-.carousel-indicators > li.active {
-  background-color: transparent;
-  border: 3px solid #fff; }
-
-.slide-text {
-  z-index: 2;
-  color: #fff;
-  font-size: 48px;
-  margin-bottom: 110px;
-  line-height: 1.2; }
-
-.slide-text2 {
-  z-index: 2;
-  color: #fff;
-  font-size: 14px;
-  font-family: "Lato";
-  margin-bottom: 32px; }
-
-.slide-button {
-  z-index: 2;
-  font-size: 14px;
-  font-weight: 400;
-  width: 147px;
-  height: 36px;
-  border: 2px solid #ffffff;
-  border-radius: 20px;
-  background: none;
-  color: white;
-  opacity: 0.7;
-  text-transform: uppercase; }
-
-.slide-button > a {
-  color: white;
-  text-transform: uppercase;
-  list-style: none;
-  text-decoration: none; }
-
-.summer-banner {
-  position: relative; }
-
-.summer-text {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  color: white;
-  font-size: 100px;
-  font-family: "Lato";
-  font-weight: 900; }
-
-.summer-text2 {
-  position: absolute;
-  font-family: "Lato";
-  font-size: 24px;
-  color: white;
-  top: 210px;
-  left: 85px;
-  text-align: center;
-  font-weight: 400; }
-
-.facebook-text {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 40px;
-  font-weight: 400; }
-
-.facebook-text2 {
-  text-align: center;
-  font-size: 13px;
-  margin-top: 5px;
-  font-weight: 400; }
-
-.sale-button {
-  margin-left: 50px;
-  margin-top: 22px;
-  font-size: 14px;
-  font-weight: 400;
-  width: 144px;
-  height: 40px;
-  border: 2px solid #3a5b96;
-  border-radius: 20px;
-  background: none;
-  color: #3a5b96;
-  text-transform: uppercase;
-  text-align: center; }
-
-.sale-button:hover {
-  background-color: #3a5b96; }
-
-.follow-normal > div:last-child {
-  display: none; }
-
-.sale-button:hover span {
-  color: #fff; }
-
-.follow-normal:hover > div:first-child {
-  display: none; }
-
-.follow-normal:hover > div:last-child {
-  display: block;
-  background-color: #3a5b96; }
-
-button.sale-button.follow-normal > div > img {
-  margin-right: 2px; }
-
-button.sale-button.follow-normal > div > span {
-  margin-left: 2px; }
-
-.osf-cards {
+.countdown-container {
   max-width: 1280px;
-  min-height: 1061px;
-  background-color: #262a32; }
-
-.osf-card-content {
-  width: 92%;
   margin: 0 auto;
-  margin-bottom: 20px; }
-
-.popular-head.col-xl-5 {
-  border-bottom: 4px solid gray;
-  padding-top: 106px;
-  height: 0px;
-  margin-bottom: 0px; }
-
-.popular-head.col-sm-2 {
-  white-space: nowrap; }
-
-.popular-head {
-  width: 145px;
-  height: 23px;
-  color: #ffffff;
-  font-family: "Lato";
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0 auto;
-  margin-bottom: 75px;
-  padding-top: 89px; }
-
-.card-stats {
-  width: 271px !important;
-  height: 366px !important;
-  background-color: #ffffff;
-  margin-right: 29px;
-  margin-bottom: 29px; }
-
-.middle-one {
-  margin-left: 20px; }
-
-.left-one {
-  margin-right: 134px; }
-
-.special-line-first {
-  max-width: 228px;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  right: 55%; }
-
-.popular-big {
-  width: 145px;
-  height: 23px;
-  color: #ffffff;
-  font-family: lato;
-  font-size: 24px;
-  font-weight: 900; }
-
-.special-line-second {
-  height: 3px;
-  max-width: 228px;
-  position: absolute;
-  top: 50%;
-  left: 65%; }
-
-.right-one {
-  margin-left: 174px; }
-
-.carousel-control-next {
-  text-align: left;
-  z-index: 0; }
-
-.carousel-control-prev {
-  text-align: right;
-  z-index: 0; }
-
-.load-more {
-  width: 270px;
-  height: 45px;
-  border: 2px solid #e8e2d6;
-  background-color: #1e1d22;
-  border-radius: 30px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 22px; }
-
-.load-more:hover {
-  background-color: #84bc22; }
-
-.load-text {
-  margin-left: 25px; }
-
-.card-text {
   text-align: center;
-  color: #2c3e50;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px; }
+  background-color: #f1f1f1; }
 
-.card-text-feat {
-  text-align: center;
-  height: 31px;
+.countdown-body {
+  max-width: 1169px;
+  height: 564px;
+  background-color: white;
+  margin: auto;
+  margin-top: 58px;
+  margin-bottom: 56px; }
+
+.e-mail-holder {
+  width: 486px;
+  height: 36px;
+  border: 2px solid gray;
+  opacity: 0.5;
+  border-radius: 30px; }
+
+.contain-time {
+  margin-top: 93px; }
+
+.text-time {
+  width: 43px;
+  height: 13px;
   color: #45413e;
   font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px; }
-
-.feat-green {
-  max-width: 63px;
-  height: 11px;
-  color: #84bc22;
-  font-family: "Lato - Extra Bold";
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0 auto; }
-
-.price-tag {
-  text-align: center;
-  color: #011847;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 400; }
-
-.gradient-card {
-  width: 271px;
-  height: 366px;
-  background-color: #ffffff;
-  background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
-  opacity: 0.8; }
-
-.featured-products {
-  width: 1280px;
-  min-height: 555px;
-  background-color: #262a32; }
-
-.featured-head {
-  padding-top: 43px;
-  font-family: lato;
-  font-size: 36px;
-  font-weight: 900;
-  color: #ffffff;
-  text-align: center; }
-
-.featured-text {
-  color: #ffffff;
-  font-family: lato;
-  font-weight: 400;
-  line-height: 36px;
   font-size: 18px;
-  text-align: center;
-  padding-bottom: 22px; }
-
-.card-stats-feature {
-  width: 270px;
-  height: 296px;
-  background-color: #ffffff; }
-
-.card-img-top2 {
-  width: 100%;
-  height: 190px;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
-
-.price-tag > div.row {
-  border: 1px solid #000;
-  border-radius: 20px;
-  height: 37px; }
-
-.price-tag > div.row > div:first-child {
-  border-right: 1px solid #000; }
-
-.price-tag > div.row > div {
-  text-align: center; }
-
-.price-tag > div.row > div {
-  padding-top: 8px; }
-
-.buy-now-popular > a {
-  width: 68px;
-  height: 11px;
-  color: #000000;
-  font-family: "Lato";
-  font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  list-style: none; }
+  line-height: 30px; }
 
-.price-tag > div.row > div:last-child:hover {
-  background-color: #84bc22;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px; }
-
-.price-tag > div.row > div:last-child:hover span {
-  color: #fff; }
-
-.full-gradient {
-  position: absolute;
-  width: 100%;
-  height: inherit;
-  background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
-  opacity: 0.8; }
-
-.full-gradient-image {
-  height: inherit; }
-
-.full-gradient > div {
-  width: 70%;
-  color: #fff;
-  margin-left: 10%; }
-
-.full-gradient > div:first-child {
-  margin-top: 80%; }
-
-.buy-card-hover-gradient {
-  position: absolute;
-  width: 100%;
-  height: inherit;
-  background-image: linear-gradient(to top, #1cc167 0%, #2ed3a2 100%);
-  opacity: 0.9;
-  display: none; }
-
-.grad-hour {
-  padding-top: 20px; }
-
-.grad-text {
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 400;
-  padding-left: 13px; }
-
-.buy-from-card, .like-from-card {
-  text-align: center;
+#days, #hours, #minutes, #seconds {
+  padding: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  width: 91px;
-  height: 91px;
-  margin: 0 auto;
-  background-color: #fff;
-  margin-top: 135px;
-  cursor: pointer; }
-
-.buy-from-card > img {
-  width: 29px;
-  height: 29px;
-  margin-top: 31px; }
-
-.like-from-card > img {
-  width: 33px;
-  height: 28px;
-  margin-top: 34px; }
-
-.information-container {
-  min-height: 198px;
-  background-color: #45413e;
-  position: relative; }
-
-.services-folder {
-  color: #868380;
-  font-family: lato;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px; }
-
-.ml-50px {
-  margin-left: 50px; }
-
-.spec-ml {
-  margin-left: 50px; }
-
-.services-header {
-  width: 57px;
-  margin-bottom: 20px;
-  height: 15px;
-  color: #ffffff;
-  font-family: lato;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  text-transform: uppercase; }
-
-.text-col {
-  color: white; }
-
-.osf-banner {
-  max-width: 1280px;
-  position: relative;
-  width: 100%; }
-
-.osf-banner-head {
-  position: absolute;
-  top: 36%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 401px;
-  height: 38px;
-  color: #ffffff;
-  font-family: Lato;
+  border: 3px solid black;
+  color: #45413e;
+  font-family: "Lato";
   font-size: 48px;
   font-weight: 900;
+  line-height: 30px; }
+
+.contain-time input {
+  color: #45413e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center; }
+
+.submit-time {
+  top: 606px;
+  position: absolute;
+  right: 411px; }
+
+.countdown-head {
+  padding-top: 55px;
+  width: 416px;
+  height: 28px;
+  color: #45413e;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+.countdown-text {
+  width: 472px;
+  height: 33px;
+  color: #45413e;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
   white-space: nowrap; }
 
-.osf-banner-text {
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-family: "Lato";
-  font-weight: 400;
-  max-width: 334px;
-  height: 28px;
-  font-size: 14px;
-  text-align: center; }
+.time-holder {
+  margin-top: 100px; }
 
 .general-footer {
   background-color: #fff;
@@ -1380,4 +995,4 @@ button.sale-button.follow-normal > div > span {
   .no-big-screen {
     display: none; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=countdown.css.map */

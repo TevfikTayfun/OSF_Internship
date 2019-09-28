@@ -133,12 +133,12 @@ body {
 .cookie-container{
     top: 45%;
     position:fixed;
-    left:20%;
+    left:5%;
     border-radius: 12px;
     display:none;
     height:auto;
     z-index:5;
-    max-width: 1170px;
+    width: 1170px;
     background-color: #ffffff;
     margin: 0 auto;
 }
@@ -156,15 +156,16 @@ body {
 }
 
 .cookie-header{
+    white-space: nowrap;
     padding-top:28px;
     width: 184px;
     height: 13px;
     color: #84bc22;
-    font-family: "Lato - Extra Bold";
+    font-family: "Lato";
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
 }
 
 .cookie-page{
@@ -204,11 +205,13 @@ body {
     
 }
 
-.cookie-close{
+
+.cookie-close {
     position: relative;
-    margin-left:90%;
-    margin-top: 10%;
+    left: 1128px;
+    top: -40px;
 }
+
 
 .fadefade {
     display: none;
