@@ -180,7 +180,7 @@ body {
   opacity: 0.8;
   z-index: 5; }
 
-.up-nav-s {
+.up-nav-s, .up-nav-p, .up-nav-sa {
   display: none; }
 
 .logo1 {
@@ -239,7 +239,8 @@ body {
   background-color: #ffffff !important; }
 
 .mega-dropdown-menu {
-  position: fixed !important; }
+  position: fixed !important;
+  border: none; }
 
 .dropdown-menu.w-100.pt-0.mt-0.show {
   top: 74px !important; }
@@ -581,9 +582,10 @@ button.sale-button.follow-normal > div > span {
   padding-top: 89px; }
 
 .card-stats {
-  width: 271px !important;
+  width: 269px !important;
   height: 366px !important;
   background-color: #ffffff;
+  margin: 0 auto;
   margin-bottom: 29px; }
 
 .middle-one {

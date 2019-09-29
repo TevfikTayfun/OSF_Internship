@@ -34,7 +34,6 @@ var loadMore = function (key) {
 }
 
 var loadMoreSuccess = function (response, key) {
-    console.log(response[key]);
     var fourCardHtml = "";
     response[key].forEach(function (elem, index) {
         var cardHtml = '<div class="col-xl-3 col-sm-12">' +
@@ -69,6 +68,9 @@ var loadMoreSuccess = function (response, key) {
     });
 }
 
+
+// total sum price
+
 var totalSumPrice = function () {
     $(".product-bold-price").html().split("$");
     parseFloat($(".product-bold-price").html().split("$")[1]);
@@ -86,12 +88,17 @@ var totalSumPrice = function () {
 
 $(document).ready(function () {
 
+
+    //scroll
+
     $(".scroll-to-top").on("click", function () {
         $("html, body").animate({
             scrollTop: 0
         }, 100);
     });
 
+
+    //shipping-prices
 
     var path = window.location.pathname;
     path = path.split("/");
@@ -161,6 +168,7 @@ $(document).ready(function () {
     })
 
 
+    //get-keys from json
 
     var loadCounter = 0;
     var loadKeys = {
@@ -177,17 +185,9 @@ $(document).ready(function () {
 
     var dateTime = new Date();
 
-    /*$(".loginAccept").on("click", function () {
-        var str = document.getElementById("myInput").value;
-        if (str.match(/[a-z]/g) && str.match(
-            /[A-Z]/g) && str.match(
-                /[0-9]/g) && str.match(
-                    /[^a-zA-Z\d]/g) && str.length >= 6)
-                }
 
-        else
-            alert("Enter the correct password type");
-    });*/
+
+    //login
 
     $(".loginAccept").on("click", function () {
         var str = document.getElementById("myInput").value;
@@ -201,6 +201,8 @@ $(document).ready(function () {
             alert("Enter the correct password type");
     });
 
+    //read more
+
     var readMore = document.getElementsByClassName("read-more");
     var moreText = document.getElementsByClassName("more");
 
@@ -210,10 +212,15 @@ $(document).ready(function () {
         $(".more").css("display", "inline");
     })
 
+    //main-image-changer
+
 
     $(".mini-pdp-image").on("mouseover", function () {
         $(".model-image-main")[0].attributes[0].nodeValue = $(this)[0].attributes[0].nodeValue;
     })
+
+
+    //sum calculator
 
     $(".scPlus").on("click", function () {
         var value = parseInt($(".scHowMany").html());
@@ -224,6 +231,8 @@ $(document).ready(function () {
         totalSumPrice();
 
     })
+
+
 
     $(".scMinus").on("click", function () {
         var value = parseInt($(".scHowMany").html());
@@ -260,6 +269,9 @@ $(document).ready(function () {
     })
 
 
+    //x button
+
+
     $(".product-x-button1").on("click", function () {
         $(".removeClass1").remove();
     })
@@ -280,6 +292,9 @@ $(document).ready(function () {
         }
     })
 
+
+    //add-to-cart
+
     $(".add-to-cart").on("click", function () {
         var value = parseInt($(".pdpHowMany").html());
         localStorage.setItem("bag", parseInt(localStorage.getItem("bag")) + value);
@@ -287,6 +302,8 @@ $(document).ready(function () {
         $(".pdpHowMany").html(0);
     })
 
+
+        //nav dropdown-media
 
     var clickCountServices = 1;
     var clickCountSale = 1;
@@ -298,8 +315,12 @@ $(document).ready(function () {
             $(".mega-item-sale").css("display", "none");
             $(".mega-item-media3").css("display", "none");
             $(".mega-item-media2").css("display", "none");
+            $(".up-nav-p").css("display", "none");
+            $(".down-nav-p").css("display", "block");
             $(".up-nav-s").css("display", "none");
             $(".down-nav-s").css("display", "block");
+            $(".up-nav-sa").css("display", "none");
+            $(".down-nav-sa").css("display", "block");
             if (clickCountProduct % 2 === 0) {
                 clickCountProduct = clickCountProduct + 1;
 
@@ -311,8 +332,8 @@ $(document).ready(function () {
 
         }
         else {
-            $(".mega-item-product").css("display", "block");
-            $(".mega-item-sale").css("display", "block");
+            $(".mega-item-product").css("display", "flex");
+            $(".mega-item-sale").css("display", "flex");
             $(".up-nav-s").css("display", "block");
             $(".down-nav-s").css("display", "none");
             clickCountServices = clickCountServices + 1;
@@ -322,29 +343,39 @@ $(document).ready(function () {
     $(".mega-item-product").on("click", function () {
         if (clickCountProduct % 2 === 0) {
             $(".mega-item-media2").css("display", "none");
+            $(".up-nav-p").css("display", "none");
+            $(".down-nav-p").css("display", "block");
             clickCountProduct = clickCountProduct + 1;
 
         }
         else {
             $(".mega-item-media2").css("display", "block");
+            $(".up-nav-p").css("display", "block");
+            $(".down-nav-p").css("display", "none");
             clickCountProduct = clickCountProduct + 1;
         }
+        
     })
 
     $(".mega-item-sale").on("click", function () {
         if (clickCountSale % 2 === 0) {
             $(".mega-item-media3").css("display", "none");
+            $(".up-nav-sa").css("display", "none");
+            $(".down-nav-sa").css("display", "block");
             clickCountSale = clickCountSale + 1;
 
         }
         else {
             $(".mega-item-media3").css("display", "block");
+            $(".up-nav-sa").css("display", "block");
+            $(".down-nav-sa").css("display", "none");
             clickCountSale = clickCountSale + 1;
         }
     })
 
 
 
+    //dropdown items
 
     var clickCountContact = 1;
     var clickCount = 1;
@@ -360,7 +391,7 @@ $(document).ready(function () {
         else {
             $(".miniItems").css("display", "block");
             clickCountContact = clickCountContact + 1;
-            console.log(clickCountContact);
+
         }
     })
 
@@ -373,7 +404,7 @@ $(document).ready(function () {
         else {
             $(".miniItems-categoriest").css("display", "block");
             clickCount = clickCount + 1;
-            console.log(clickCount);
+
         }
     })
 
@@ -386,23 +417,25 @@ $(document).ready(function () {
         else {
             $(".miniItems-about").css("display", "block");
             clickCountAbout = clickCountAbout + 1;
-            console.log(clickCountAbout);
+
         }
     })
 
 
 
-
-
+    //load-more
 
     $(".load-more").on("click", function () {
         loadMore(loadKeys[loadCounter + 1]);
         loadCounter = loadCounter + 1;
     });
 
+
+    // footer year
+
     $(".footer-year").html(dateTime.getFullYear());
 
-
+    //cookie fade effect
     if (localStorage.getItem("cookie") === "none") {
         setTimeout(function () {
             var showL = (w - 1770) / 2;
@@ -419,7 +452,7 @@ $(document).ready(function () {
     }
 
 
-
+    //cookie
 
     $(".cookie-close").on("click", function () {
         $(".cookie-container").css("display", "none");
@@ -456,6 +489,7 @@ $(document).ready(function () {
             $(".servicesDropdownMenu").addClass("show");
             $(".service-hov").css("color", "#fff");
             $(".service-hov").css("background-color", "#262a32");
+            $(".carousel-indicators").addClass("d-none");
         }
     })
 
@@ -465,6 +499,25 @@ $(document).ready(function () {
             $(".servicesDropdownMenu").removeClass("show");
             $(".service-hov").css("color", "#000");
             $(".service-hov").css("background-color", "#fff");
+            $(".carousel-indicators").removeClass("d-none");
+        }
+    })
+
+
+    //indicator cancel
+
+    var counterNavToggle = 0;
+
+    $(".navbar-toggler").on("click" , function(){
+        if(counterNavToggle %2 === 0)
+        {
+            $(".carousel-indicators").addClass("d-none");
+            counterNavToggle= counterNavToggle + 1;
+        }
+        else
+        {
+            $(".carousel-indicators").removeClass("d-none");
+            counterNavToggle= counterNavToggle + 1;
         }
     })
 
@@ -557,27 +610,63 @@ $(document).ready(function () {
         }
     })
 
+    //expand image
 
-    var countDownDate = new Date("Oct 1, 2019 15:00:00").getTime();
-/*
-    var x = setInterval(function () {
+    $(".expand-image").on("click", function() {
+        var imgSrc = $(".model-image-main")[0].attributes[0].nodeValue;
+        imgSrc = imgSrc.split(".");
+        imgSrc = imgSrc[1] + "." + imgSrc[2];
+        var biggerImg = window.location.origin + "/OSF_Internship" + imgSrc;
+        console.log(biggerImg)
+        window.open(biggerImg, "_blank");
+    })
 
-        var now = new Date().getTime();
+    // Print Function
+    $(".printPage").on("click", function() {
+        $(".navbar").addClass("d-none");
+        $(".general-footer").addClass("d-none");
+        $(".printPage").addClass("d-none");
+        $(".list-group").parent().parent().addClass("d-none");
+        $(".popular-accurate").addClass("d-none");
+        $(".osf-cards").addClass("d-none");
+        $(".information-container").addClass("d-none");
+        $(".breadcrumb").addClass("d-none");
+        $(".pdp-title").addClass("d-none");
+        window.print();
+        $(".navbar").removeClass("d-none");
+        $(".general-footer").removeClass("d-none");
+        $(".printPage").removeClass("d-none");
+        $(".list-group").parent().parent().removeClass("d-none");
+        $(".popular-accurate").removeClass("d-none");
+        $(".osf-cards").removeClass("d-none");
+        $(".information-container").removeClass("d-none");
+        $(".breadcrumb").removeClass("d-none");
+        $(".pdp-title").removeClass("d-none");
+    })
 
-        var distance = countDownDate - now;
+    //countdown
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    if (path === "countdown.html") {
+        var countDownDate = new Date("Oct 1, 2019 15:00:00").getTime();
+
+        var x = setInterval(function () {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
-    }, 1000);
-*/
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+    }
 
 
 

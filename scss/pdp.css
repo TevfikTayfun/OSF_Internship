@@ -180,7 +180,7 @@ body {
   opacity: 0.8;
   z-index: 5; }
 
-.up-nav-s {
+.up-nav-s, .up-nav-p, .up-nav-sa {
   display: none; }
 
 .logo1 {
@@ -239,7 +239,8 @@ body {
   background-color: #ffffff !important; }
 
 .mega-dropdown-menu {
-  position: fixed !important; }
+  position: fixed !important;
+  border: none; }
 
 .dropdown-menu.w-100.pt-0.mt-0.show {
   top: 74px !important; }
@@ -423,6 +424,18 @@ a:hover {
   font-size: 13px;
   font-weight: 400; }
 
+.tab-header {
+  color: #bdc3c7;
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 900; }
+
+.tab-text {
+  color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400; }
+
 .ellipse-right {
   margin-right: 5px; }
 
@@ -475,7 +488,7 @@ a:hover {
   border-radius: 18px;
   margin-bottom: 33px; }
 
-.add-to-cart {
+.add-to-cart, .printPage {
   width: 153px;
   height: 36px;
   border: 2px solid #e8e2d6;
@@ -626,6 +639,11 @@ div#list-tab > a {
   margin: 0 !important;
   padding: 20px 0 !important;
   text-align: center; }
+
+.expand-image {
+  position: absolute;
+  top: 17px;
+  left: 40px; }
 
 .general-footer {
   background-color: #fff;

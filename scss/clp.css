@@ -180,7 +180,7 @@ body {
   opacity: 0.8;
   z-index: 5; }
 
-.up-nav-s {
+.up-nav-s, .up-nav-p, .up-nav-sa {
   display: none; }
 
 * {
@@ -433,7 +433,8 @@ a:hover {
   background-color: #ffffff !important; }
 
 .mega-dropdown-menu {
-  position: fixed !important; }
+  position: fixed !important;
+  border: none; }
 
 .dropdown-menu.w-100.pt-0.mt-0.show {
   top: 74px !important; }
