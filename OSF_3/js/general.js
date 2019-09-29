@@ -296,12 +296,25 @@ $(document).ready(function () {
         if (clickCountServices % 2 === 0) {
             $(".mega-item-product").css("display", "none");
             $(".mega-item-sale").css("display", "none");
+            $(".mega-item-media3").css("display", "none");
+            $(".mega-item-media2").css("display", "none");
+            $(".up-nav-s").css("display", "none");
+            $(".down-nav-s").css("display", "block");
+            if (clickCountProduct % 2 === 0) {
+                clickCountProduct = clickCountProduct + 1;
+
+            }
+            if (clickCountSale % 2 === 0) {
+                clickCountSale = clickCountSale + 1;
+            }
             clickCountServices = clickCountServices + 1;
 
         }
         else {
             $(".mega-item-product").css("display", "block");
             $(".mega-item-sale").css("display", "block");
+            $(".up-nav-s").css("display", "block");
+            $(".down-nav-s").css("display", "none");
             clickCountServices = clickCountServices + 1;
         }
     })
@@ -420,7 +433,7 @@ $(document).ready(function () {
     })
 
 
-
+    //Show password
 
     $(".showPassword").on("click", function () {
         if ($("#myInput").attr("type") === "password") {
@@ -435,7 +448,7 @@ $(document).ready(function () {
     });
 
 
-
+    //Services-dropdown
 
     $(".servicesDropdown").on("mouseover", function () {
         if ($(document).width() >= 768) {
@@ -546,27 +559,27 @@ $(document).ready(function () {
 
 
     var countDownDate = new Date("Oct 1, 2019 15:00:00").getTime();
+/*
+    var x = setInterval(function () {
 
-    var x = setInterval(function() {
+        var now = new Date().getTime();
 
-    var now = new Date().getTime();
+        var distance = countDownDate - now;
 
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours; 
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
     }, 1000);
-    
+*/
 
 
 
-    
+
 });

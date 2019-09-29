@@ -50,6 +50,20 @@
         float:right;
     }
 
+    .pop-media-text{
+        color: #fff;
+        margin: 0 auto;
+        
+    }
+
+    .popular-med-head{
+        text-align:center;
+        color: #ffffff;
+        font-family: "Lato";
+        font-size: 18px;
+        font-weight: 600;
+    }
+
     .icon-media-spec{
         display:none;
         padding-top: 6px;
@@ -123,7 +137,7 @@
         width: 249px;
         height: 24px;
         color: #ffffff;
-        font-family: "Lato - Extra Bold";
+        font-family: "Lato";
         font-size: 30px;
         font-weight: 900;
         white-space: nowrap;
@@ -135,9 +149,9 @@
         text-align: left;
         min-width: 260px;
         color: #ffffff;
-        font-family: "MYRIADPRO-REGULAR";
+        font-family: "lato";
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 900;
         margin-left: 8px;
         margin-right: 5px;
         margin-bottom:35px;
@@ -169,9 +183,9 @@
         display: block;
         text-align: left;
         color: #ffffff;
-        font-family: "MyriadPRO-REGULAR";
+        font-family: "myriadpro-regular";
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         margin-left: 8px;
         margin-right: 5px;
     }
@@ -234,6 +248,7 @@
 
     #navbarSupportedContent{
         margin-top: 10px;
+        height:1000px;
     }
 
     .header-mini-method{
@@ -386,6 +401,12 @@
         bottom:-50px !important;
     }
 
+    .model-image-main{
+        width: 294px;
+        height: 290px;
+        margin:0 auto;
+    }
+
     .scroll-to-top{
         width: 153px;
         height: 38px;
@@ -462,7 +483,7 @@
         width: 276px;
         height: 31px;
         color: #fff;
-        font-family: "Myriad Pro";
+        font-family: "lato";
         font-size: 14px;
         font-weight: 400;
         margin-top:10px;
@@ -511,8 +532,20 @@
         height: 15px;
     }
 
+    .shopping-head{
+        font-size: 24px;
+    }
+
+    .align-center-media{
+        text-align:center;
+    }
+
     div#navbarSupportedContent {
         background-color: #262a32;
+    }
+
+    .d-none{
+        display:none;
     }
 
     .navbar-light .navbar-toggler {
@@ -527,9 +560,6 @@
         margin-left: 63% !important;
     }
 
-    .cookie-text{
-        width:320px;
-    }
 
 
     .navbar-light .navbar-nav .nav-link {
@@ -573,6 +603,8 @@
     .no-media{
         display:none;
     }
+    
+    
     
 }
 

@@ -75,9 +75,9 @@ body {
 
 .modal-title {
   color: #45413e;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato ";
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 50px;
   margin-bottom: 30px; }
 
@@ -106,12 +106,12 @@ body {
 .cookie-container {
   top: 45%;
   position: fixed;
-  left: 20%;
+  left: 5%;
   border-radius: 12px;
   display: none;
   height: auto;
   z-index: 5;
-  max-width: 1170px;
+  width: 90%;
   background-color: #ffffff;
   margin: 0 auto; }
 
@@ -125,15 +125,14 @@ body {
   margin-left: 300px; }
 
 .cookie-header {
+  white-space: nowrap;
   padding-top: 28px;
-  width: 184px;
-  height: 13px;
   color: #84bc22;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 24px;
-  margin-bottom: 24px; }
+  margin-bottom: 34px; }
 
 .cookie-page {
   color: #84bc22; }
@@ -142,18 +141,22 @@ body {
   color: #84bc22; }
 
 .cookie-text {
-  white-space: nowrap;
-  width: 828px;
-  height: 60px;
   color: #45413e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px; }
 
+.accept-holder {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+
 .cookie-accept {
   border: 2px solid #e8e2d6;
-  width: 148px;
+  width: 148px !important;
   height: 37px;
   background-color: #84bc22;
   border-radius: 30px;
@@ -163,14 +166,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  position: relative;
-  left: 84%;
-  top: -29px; }
+  position: relative; }
 
 .cookie-close {
-  position: relative;
-  margin-left: 90%;
-  margin-top: 10%; }
+  position: absolute;
+  right: 10px;
+  top: 10px; }
 
 .fadefade {
   display: none;
@@ -536,11 +537,17 @@ a:hover {
 .pdp-title {
   height: 46px;
   color: #45413e;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato";
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 900;
   text-align: center;
   margin-bottom: 54px; }
+
+.pdpPlus {
+  margin-left: 20px; }
+
+.pdpMinus {
+  margin-right: 20px; }
 
 .tab-container {
   width: 100%;
@@ -583,6 +590,39 @@ a:hover {
   max-height: 526px;
   margin-top: 14px;
   margin-left: 16px; }
+
+div#list-tab {
+  position: relative;
+  display: -webkit-inline-box;
+  width: 80%;
+  margin: 15px 10%;
+  z-index: 0; }
+
+#list-tab {
+  margin-bottom: 0 !important; }
+
+.tab-content {
+  width: 100%;
+  background-color: #262a33;
+  color: #fff;
+  margin-top: 0 !important; }
+
+.list-group-item {
+  border: none; }
+
+.list-group-item.active {
+  border: none;
+  background-color: #262a33;
+  color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
+
+div#list-tab > a {
+  position: relative;
+  width: 33%;
+  margin: 0 !important;
+  padding: 20px 0 !important;
+  text-align: center; }
 
 .general-footer {
   background-color: #fff;
@@ -1120,6 +1160,17 @@ button.sale-button.follow-normal > div > span {
     padding-top: 6px;
     float: right; }
 
+  .pop-media-text {
+    color: #fff;
+    margin: 0 auto; }
+
+  .popular-med-head {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 600; }
+
   .icon-media-spec {
     display: none;
     padding-top: 6px;
@@ -1179,7 +1230,7 @@ button.sale-button.follow-normal > div > span {
     width: 249px;
     height: 24px;
     color: #ffffff;
-    font-family: "Lato - Extra Bold";
+    font-family: "Lato";
     font-size: 30px;
     font-weight: 900;
     white-space: nowrap;
@@ -1190,9 +1241,9 @@ button.sale-button.follow-normal > div > span {
     text-align: left;
     min-width: 260px;
     color: #ffffff;
-    font-family: "MYRIADPRO-REGULAR";
+    font-family: "lato";
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 8px;
     margin-right: 5px;
     margin-bottom: 35px; }
@@ -1219,9 +1270,9 @@ button.sale-button.follow-normal > div > span {
     display: block;
     text-align: left;
     color: #ffffff;
-    font-family: "MyriadPRO-REGULAR";
+    font-family: "myriadpro-regular";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 8px;
     margin-right: 5px; }
 
@@ -1269,7 +1320,8 @@ button.sale-button.follow-normal > div > span {
     left: 24%; }
 
   #navbarSupportedContent {
-    margin-top: 10px; }
+    margin-top: 10px;
+    height: 1000px; }
 
   .header-mini-method {
     position: relative;
@@ -1388,6 +1440,11 @@ button.sale-button.follow-normal > div > span {
   .media-bot {
     bottom: -50px !important; }
 
+  .model-image-main {
+    width: 294px;
+    height: 290px;
+    margin: 0 auto; }
+
   .scroll-to-top {
     width: 153px;
     height: 38px;
@@ -1451,7 +1508,7 @@ button.sale-button.follow-normal > div > span {
     width: 276px;
     height: 31px;
     color: #fff;
-    font-family: "Myriad Pro";
+    font-family: "lato";
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px; }
@@ -1489,6 +1546,12 @@ button.sale-button.follow-normal > div > span {
     width: 15px;
     height: 15px; }
 
+  .shopping-head {
+    font-size: 24px; }
+
+  .align-center-media {
+    text-align: center; }
+
   div#navbarSupportedContent {
     background-color: #262a32; }
 
@@ -1501,9 +1564,6 @@ button.sale-button.follow-normal > div > span {
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: 63% !important; }
-
-  .cookie-text {
-    width: 320px; }
 
   .navbar-light .navbar-nav .nav-link {
     color: #fff;

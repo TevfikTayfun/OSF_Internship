@@ -75,9 +75,9 @@ body {
 
 .modal-title {
   color: #45413e;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato ";
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 50px;
   margin-bottom: 30px; }
 
@@ -111,7 +111,7 @@ body {
   display: none;
   height: auto;
   z-index: 5;
-  width: 1170px;
+  width: 90%;
   background-color: #ffffff;
   margin: 0 auto; }
 
@@ -127,8 +127,6 @@ body {
 .cookie-header {
   white-space: nowrap;
   padding-top: 28px;
-  width: 184px;
-  height: 13px;
   color: #84bc22;
   font-family: "Lato";
   font-size: 16px;
@@ -143,18 +141,22 @@ body {
   color: #84bc22; }
 
 .cookie-text {
-  white-space: nowrap;
-  width: 828px;
-  height: 60px;
   color: #45413e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px; }
 
+.accept-holder {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+
 .cookie-accept {
   border: 2px solid #e8e2d6;
-  width: 148px;
+  width: 148px !important;
   height: 37px;
   background-color: #84bc22;
   border-radius: 30px;
@@ -164,14 +166,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  position: relative;
-  left: 84%;
-  top: -29px; }
+  position: relative; }
 
 .cookie-close {
-  position: relative;
-  left: 1128px;
-  top: -40px; }
+  position: absolute;
+  right: 10px;
+  top: 10px; }
 
 .fadefade {
   display: none;
@@ -179,6 +179,9 @@ body {
   background-color: #000;
   opacity: 0.8;
   z-index: 5; }
+
+.up-nav-s {
+  display: none; }
 
 .logo1 {
   width: 63px;
@@ -963,6 +966,17 @@ button.sale-button.follow-normal > div > span {
     padding-top: 6px;
     float: right; }
 
+  .pop-media-text {
+    color: #fff;
+    margin: 0 auto; }
+
+  .popular-med-head {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 600; }
+
   .icon-media-spec {
     display: none;
     padding-top: 6px;
@@ -1022,7 +1036,7 @@ button.sale-button.follow-normal > div > span {
     width: 249px;
     height: 24px;
     color: #ffffff;
-    font-family: "Lato - Extra Bold";
+    font-family: "Lato";
     font-size: 30px;
     font-weight: 900;
     white-space: nowrap;
@@ -1033,9 +1047,9 @@ button.sale-button.follow-normal > div > span {
     text-align: left;
     min-width: 260px;
     color: #ffffff;
-    font-family: "MYRIADPRO-REGULAR";
+    font-family: "lato";
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 8px;
     margin-right: 5px;
     margin-bottom: 35px; }
@@ -1062,9 +1076,9 @@ button.sale-button.follow-normal > div > span {
     display: block;
     text-align: left;
     color: #ffffff;
-    font-family: "MyriadPRO-REGULAR";
+    font-family: "myriadpro-regular";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 8px;
     margin-right: 5px; }
 
@@ -1112,7 +1126,8 @@ button.sale-button.follow-normal > div > span {
     left: 24%; }
 
   #navbarSupportedContent {
-    margin-top: 10px; }
+    margin-top: 10px;
+    height: 1000px; }
 
   .header-mini-method {
     position: relative;
@@ -1231,6 +1246,11 @@ button.sale-button.follow-normal > div > span {
   .media-bot {
     bottom: -50px !important; }
 
+  .model-image-main {
+    width: 294px;
+    height: 290px;
+    margin: 0 auto; }
+
   .scroll-to-top {
     width: 153px;
     height: 38px;
@@ -1294,7 +1314,7 @@ button.sale-button.follow-normal > div > span {
     width: 276px;
     height: 31px;
     color: #fff;
-    font-family: "Myriad Pro";
+    font-family: "lato";
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px; }
@@ -1332,8 +1352,17 @@ button.sale-button.follow-normal > div > span {
     width: 15px;
     height: 15px; }
 
+  .shopping-head {
+    font-size: 24px; }
+
+  .align-center-media {
+    text-align: center; }
+
   div#navbarSupportedContent {
     background-color: #262a32; }
+
+  .d-none {
+    display: none; }
 
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -1344,9 +1373,6 @@ button.sale-button.follow-normal > div > span {
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: 63% !important; }
-
-  .cookie-text {
-    width: 320px; }
 
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
