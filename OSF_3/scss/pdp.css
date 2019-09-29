@@ -180,6 +180,9 @@ body {
   opacity: 0.8;
   z-index: 5; }
 
+.up-nav-s {
+  display: none; }
+
 .logo1 {
   width: 63px;
   height: 65px; }
@@ -893,10 +896,10 @@ button.sale-button.follow-normal > div > span {
   padding-top: 89px; }
 
 .card-stats {
-  width: 271px !important;
+  width: 269px !important;
   height: 366px !important;
   background-color: #ffffff;
-  margin-right: 29px;
+  margin: 0 auto;
   margin-bottom: 29px; }
 
 .middle-one {
@@ -1554,6 +1557,9 @@ button.sale-button.follow-normal > div > span {
 
   div#navbarSupportedContent {
     background-color: #262a32; }
+
+  .d-none {
+    display: none; }
 
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);

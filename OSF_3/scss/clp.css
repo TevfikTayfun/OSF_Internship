@@ -75,9 +75,9 @@ body {
 
 .modal-title {
   color: #45413e;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato ";
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 900;
   margin-top: 50px;
   margin-bottom: 30px; }
 
@@ -106,25 +106,33 @@ body {
 .cookie-container {
   top: 45%;
   position: fixed;
-  left: 20%;
+  left: 5%;
   border-radius: 12px;
   display: none;
   height: auto;
   z-index: 5;
-  max-width: 1170px;
+  width: 90%;
   background-color: #ffffff;
   margin: 0 auto; }
 
+.mb-100px {
+  margin-bottom: 100px; }
+
+.ml-200px {
+  margin-left: 200px; }
+
+.ml-300px {
+  margin-left: 300px; }
+
 .cookie-header {
+  white-space: nowrap;
   padding-top: 28px;
-  width: 184px;
-  height: 13px;
   color: #84bc22;
-  font-family: "Lato - Extra Bold";
+  font-family: "Lato";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 24px;
-  margin-bottom: 24px; }
+  margin-bottom: 34px; }
 
 .cookie-page {
   color: #84bc22; }
@@ -133,18 +141,22 @@ body {
   color: #84bc22; }
 
 .cookie-text {
-  white-space: nowrap;
-  width: 828px;
-  height: 60px;
   color: #45413e;
   font-family: Lato;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px; }
 
+.accept-holder {
+  width: 100%;
+  position: relative;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }
+
 .cookie-accept {
   border: 2px solid #e8e2d6;
-  width: 148px;
+  width: 148px !important;
   height: 37px;
   background-color: #84bc22;
   border-radius: 30px;
@@ -154,14 +166,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  position: relative;
-  left: 84%;
-  top: -29px; }
+  position: relative; }
 
 .cookie-close {
-  position: relative;
-  margin-left: 90%;
-  margin-top: 10%; }
+  position: absolute;
+  right: 10px;
+  top: 10px; }
 
 .fadefade {
   display: none;
@@ -169,6 +179,9 @@ body {
   background-color: #000;
   opacity: 0.8;
   z-index: 5; }
+
+.up-nav-s {
+  display: none; }
 
 * {
   padding: 0;
@@ -677,6 +690,17 @@ a:hover {
     padding-top: 6px;
     float: right; }
 
+  .pop-media-text {
+    color: #fff;
+    margin: 0 auto; }
+
+  .popular-med-head {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 600; }
+
   .icon-media-spec {
     display: none;
     padding-top: 6px;
@@ -736,7 +760,7 @@ a:hover {
     width: 249px;
     height: 24px;
     color: #ffffff;
-    font-family: "Lato - Extra Bold";
+    font-family: "Lato";
     font-size: 30px;
     font-weight: 900;
     white-space: nowrap;
@@ -747,9 +771,9 @@ a:hover {
     text-align: left;
     min-width: 260px;
     color: #ffffff;
-    font-family: "MYRIADPRO-REGULAR";
+    font-family: "lato";
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 900;
     margin-left: 8px;
     margin-right: 5px;
     margin-bottom: 35px; }
@@ -776,9 +800,9 @@ a:hover {
     display: block;
     text-align: left;
     color: #ffffff;
-    font-family: "MyriadPRO-REGULAR";
+    font-family: "myriadpro-regular";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 8px;
     margin-right: 5px; }
 
@@ -826,7 +850,8 @@ a:hover {
     left: 24%; }
 
   #navbarSupportedContent {
-    margin-top: 10px; }
+    margin-top: 10px;
+    height: 1000px; }
 
   .header-mini-method {
     position: relative;
@@ -945,6 +970,11 @@ a:hover {
   .media-bot {
     bottom: -50px !important; }
 
+  .model-image-main {
+    width: 294px;
+    height: 290px;
+    margin: 0 auto; }
+
   .scroll-to-top {
     width: 153px;
     height: 38px;
@@ -1008,7 +1038,7 @@ a:hover {
     width: 276px;
     height: 31px;
     color: #fff;
-    font-family: "Myriad Pro";
+    font-family: "lato";
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px; }
@@ -1030,8 +1060,33 @@ a:hover {
   .m-0px {
     margin: 0 !important; }
 
+  .error-mini-media {
+    text-align: center;
+    margin-bottom: 25px; }
+
+  .error-mini {
+    color: #85c441;
+    margin-bottom: 25px; }
+
+  .error-mini-media span a {
+    color: #85c441; }
+
+  .arrow-hide {
+    display: none;
+    width: 15px;
+    height: 15px; }
+
+  .shopping-head {
+    font-size: 24px; }
+
+  .align-center-media {
+    text-align: center; }
+
   div#navbarSupportedContent {
     background-color: #262a32; }
+
+  .d-none {
+    display: none; }
 
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
@@ -1042,9 +1097,6 @@ a:hover {
   .dropdown-toggle::after {
     display: inline-block;
     margin-left: 63% !important; }
-
-  .cookie-text {
-    width: 320px; }
 
   .navbar-light .navbar-nav .nav-link {
     color: #fff;
@@ -1108,10 +1160,10 @@ a:hover {
   padding-top: 89px; }
 
 .card-stats {
-  width: 271px !important;
+  width: 269px !important;
   height: 366px !important;
   background-color: #ffffff;
-  margin-right: 29px;
+  margin: 0 auto;
   margin-bottom: 29px; }
 
 .middle-one {
